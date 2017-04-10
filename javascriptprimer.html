@@ -5,11 +5,29 @@
 	</head>
 	<body>
 		<h2>getElementById() = one of many JS HTML methods</h2>
+
+		<h3>What can JavaScript Do?</h3>
+
+		<p><strong>JavaScript can change HTML content.</strong></p>
+
 		<div id="demo"></div>
 
+		<p><strong>JavaScript can change HTML Styles (CSS)</strong></p>
+
+		<div id="demo2">Jai ne life ma nou.</div>
+
+
 		<script type="text/javascript">
+
+		// Use either all single quotes or all double quotes 
 			
 			document.getElementById("demo").innerHTML = "Hello JavaScript!"; 
+
+
+		// Change style of an HTML element, variant of changing an HTML attribute:
+
+		document.getElementById("demo2").style.fontSize = "25px"; 
+
 		</script>
 
 	</body>
