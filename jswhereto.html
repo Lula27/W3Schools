@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>JavaScript Where To</title>
-	</head>
-	<body>
-		<h1 id="place">Placement of JS text</h1>
-	<script>
-		document.getElementById("place").innerHTML = "Hello World!"; 
-		
-	</script>
 
-	</body>
+<head>
+<!-- Place JS function in head section of HTML page; function invoked (called) when button is clicked -->
+<script>
+function myFunction() {
+	document.getElementById("demo").innerHTML = "Paragraph changed."; 
+}
+</script>
+		<title>JavaScript Where To</title>
+</head>
+
+<body>
+		<h1>A Web Page</h1>
+		<p id="demo">A Paragraph</p>
+		<button type="button" onclick="myFunction()">Try it!</button>
+
+</body>
 </html>
