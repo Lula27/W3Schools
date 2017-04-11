@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>External JavaScript</title>
+</head>
+<body>
+
+<h1>Example 1: Full URL</h1>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>myFunction is stored in an external file called "myScript.js"</p>
+
+<script scr="https://w3schools.com/js/myScript.js">
+	function myFunction() {
+		document.getElementById("demo").innerHTML = "Changed paragraph content!"; 
+	}
+</script>
+
+</body>
+</html>
