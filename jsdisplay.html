@@ -8,14 +8,32 @@
 <h1>JavaScript Display Possibilities</h1>
 <p>JS displays data in different ways:
 	<ul>
-		<li><strong>innerHTML-</strong> write into an HTML element</li>
+	<div>
+		<li><strong>innerHTML-</strong> write into an HTML element *access HTML element with document.getElementById(id) method; id attribute defines HTML element; innerHTML property defines HTML content</li>
+		<br>
+		<em>Example</em><p id="demo"></p>
+	</div>
+
 		<li><strong>document.write-</strong> write into HTML output; *Using document.write() after an HTML document is fully loaded will <strong>delete all existing HTML</strong> (useful for testing) </li>
 		<li><strong>window.alert()-</strong> write into an alert box</li>
 		<li><strong>console.log()-</strong> write into browser console</li>
 	</ul>
-
-
 </p>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph</p>
+
+
+
+<script>
+// Using innerHTML property 
+	document.getElementById("demo").innerHTML = 5 + 6; 
+
+// using document.write
+	document.write(5 + 6); 
+
+</script>
+
 
 </body>
 </html>
