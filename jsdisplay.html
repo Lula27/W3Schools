@@ -13,24 +13,33 @@
 		<br>
 		<em>Example</em><p id="demo"></p>
 	</div>
-
-		<li><strong>document.write-</strong> write into HTML output; *Using document.write() after an HTML document is fully loaded will <strong>delete all existing HTML</strong> (useful for testing) </li>
 		<li><strong>window.alert()-</strong> write into an alert box</li>
-		<li><strong>console.log()-</strong> write into browser console</li>
+		<li><strong>console.log()-</strong> write into browser console *useful for debugging*</li>
+		<div>
+		<li><strong>document.write-</strong> write into HTML output; *Using document.write() after an HTML document is fully loaded will <strong>delete all existing HTML</strong> (useful for testing) </li>
+		<br>
+		<em>Example</em><p id="demo2"></p>
+	</div>
 	</ul>
 </p>
 
-<h2>My First Web Page</h2>
-<p>My First Paragraph</p>
-
-
-
 <script>
 // Using innerHTML property 
+	
 	document.getElementById("demo").innerHTML = 5 + 6; 
 
-// using document.write
+// Using document.write
+	
 	document.write(5 + 6); 
+
+// Using window.alert()
+
+	window.alert(5 + 6);
+
+// Using console.log()
+
+	console.log(5 + 6)
+
 
 </script>
 
