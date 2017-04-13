@@ -11,11 +11,32 @@
 	<p>Instructions to be executed by the web browser.</p>
 	<p>Example: </p><div id="statement"></div>
 
+	<h2>JavaScript Programs = many JS statements</h2>
+	<p>Statements executed one by one in same order they are written</p>
+	<p>Example: </p><div id="program"></div>
+
 	<script>
 		
 		// This statement tells the browser to write "Hello Dolly." inside an HTML element with id="statement":	
 
 		document.getElementById("statement").innerHTML = "Hello Dolly!"; 
+
+		// JS Program ex- In this example x, y, and z are given values, and finally z is displayed:
+
+		var x, y, z;
+
+		x = 5;
+
+		y = 6;
+
+		z = x + y; 
+
+		document.getElementById("program").innerHTML = z; 
+
+
+
+
+
 	</script>
 </body>
 </html>
