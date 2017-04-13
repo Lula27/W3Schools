@@ -15,6 +15,12 @@
 	<p>Statements executed one by one in same order they are written</p>
 	<p>Example: </p><div id="program"></div>
 
+	<h2>JavaScript Line Length and Line Breaks</h2>
+	<p>Rule of thumb: avoid code lines longer than 80 characters</p>
+	<p>Break after operator.</p>
+	<p>document.getElementById("demo").innerHTML = <br>
+	"Hello Dolly.";</p>
+
 	<script>
 		
 		// This statement tells the browser to write "Hello Dolly." inside an HTML element with id="statement":	
@@ -32,6 +38,12 @@
 		z = x + y; 
 
 		document.getElementById("program").innerHTML = z; 
+
+		// Note: When separated by semicolons, multiple statements on one line are allowed:
+
+		a = 5; b = 6; c = a + b;
+
+		console.log(c); 
 
 
 
