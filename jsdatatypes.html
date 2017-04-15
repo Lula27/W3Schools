@@ -4,7 +4,18 @@
 	<title>JS Data Types</title>
 </head>
 <body>
-	<h1>JavaScript Data Types</h1>
+	<h1>The Concept of Data Types</h1>
+
+	<div id="ex1"></div>
+
+	<div id="ex2"></div>
+
+	<h2>Different sequences produce different results:</h2>
+
+	<div id="ex3"></div>
+
+	<div id="ex4"></div>
+
 
 	<script type="text/javascript">
 		
@@ -13,6 +24,27 @@
 		var length = 16;  //Number
 		var lastName = "Johnson"    // String
 		var x = {firstName: "John", lastName: "Doe"};    // Object 
+
+		// Examples of how computer interprets various data types and order they are processed 
+
+		// Adding number to string -> JS treats # as a string 
+
+		var x = 16 + "Volvo"; 
+
+		document.getElementById("ex1").innerHTML = x; 
+
+		var y = "Volvo" + 16; 
+
+		document.getElementById("ex2").innerHTML = x; 
+
+		// Different sequences produce different results:
+		var a = 16 + 4 + "Volvo"; 
+
+		document.getElementById("ex3").innerHTML = a; 
+
+		var b = "Volvo" + 16 + 4; 
+
+		document.getElementById("ex4").innerHTML = b; 
 
 	</script>
 
