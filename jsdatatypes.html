@@ -16,6 +16,29 @@
 
 	<div id="ex4"></div>
 
+	<h3>Primitive Data: single data value with no additional properties and methods.</h3>
+	<p><strong>typeof</strong> operator can return one of these primitive types:</p>
+
+		<ul>
+			<li>string</li>
+			<li>number</li>
+			<li>boolean</li>
+			<li>null</li>
+			<li>undefined</li>
+		</ul>
+
+	<h3>Complex Data: </h3>
+	<p><strong>typeof</strong> operator returns two complex types:</p>
+
+		<ul>
+			<li>function</li>
+			<li>object</li>
+		</ul>
+
+	<p>Examples:</p>
+	<div id="ex5"></div>
+	<div id="ex6"></div>
+
 
 	<script type="text/javascript">
 		
@@ -23,7 +46,32 @@
 
 		var length = 16;  //Number
 		var lastName = "Johnson"    // String
-		var x = {firstName: "John", lastName: "Doe"};    // Object 
+		var x = {firstName: "John", lastName: "Doe"}; 
+
+
+		// Number Variables 
+		var l = 123e5; 
+
+		// console.log(l);
+
+		// Number variable 2
+		var lo = 123e-5; 
+
+		// console.log(lo); 
+
+		var array = [1, 2, 3, 4] // Returns "object" b/c JS arrays are objects
+
+		var what = typeof array; 
+
+		console.log(what); 
+
+		document.getElementById("ex5").innerHTML = array; 
+
+		var myType = "This variable, an array, is an " + what + "!"; 
+
+		document.getElementById("ex6").innerHTML = myType; 
+
+		// Object 
 
 		// Examples of how computer interprets various data types and order they are processed 
 
