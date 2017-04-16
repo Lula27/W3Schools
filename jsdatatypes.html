@@ -40,6 +40,12 @@
 	<div id="ex6"></div>
 
 
+	<h3>Undefined</h3>
+	<p>In JavaScript, a variable without a value, has the value <strong>undefined</strong>.</p>
+	<div id="emptyset"></div>
+	<p>Wait! What?!</p>
+	<p>Surprisingly, in JavaScript, the data type of null is an object.</p>
+
 	<script type="text/javascript">
 		
 		// JS variables can hold many data types: numbers, strings, objects, etc.
@@ -93,6 +99,17 @@
 		var b = "Volvo" + 16 + 4; 
 
 		document.getElementById("ex4").innerHTML = b; 
+
+
+		// Empty Values & Null
+
+		var employers = null; 
+
+		var identify = typeof(employers); 
+
+		var txt = "My variable, employers is an " + identify + "."; 
+
+		document.getElementById("emptyset").innerHTML = txt; 
 
 	</script>
 
