@@ -19,18 +19,29 @@
 
 	<h3>Example</h3>
 	<p>Calculate the product of two numbers, and return the result:</p>
-	<div id="funreturn"></div>
+	<div id="funreturnx"></div>
+	<div id="funreturny"></div>
+	<div id="funreturnz"></div>
 
 	<script>
 		
 		// Function Return Example
 		var x = myFunction(4, 3);	// Function is called, return value will end up in x 
 
+		var y = myFunction(5, 7); 
+
+		var z = myFunction(567, 3000); 
+
 		function myFunction(a, b) {
 			return a * b; 		// Fucnction returns the product of a and b 
 		}
 
-		console.log(x); 
+		document.getElementById("funreturnx").innerHTML = x; 
+
+		document.getElementById("funreturny").innerHTML = y; 
+
+
+		document.getElementById("funreturnz").innerHTML = z; 
 
 	</script>
 
