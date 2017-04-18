@@ -13,6 +13,19 @@
 	<h2>Object Properties</h2>
 	<p>The name:value pairs (in JS objects) are called <strong>properties</strong>.</p>
 	<img src="file:///C:/Users/loret/Desktop/Coding/W3Schools/javascript/images/objectproperties.jpg">
+	
+	<h3>Accessing Object Properties</h3>
+	<p>How? Two ways...</p>
+	<p>A. &emsp; objectName.propertyName</p>
+	<p>B. &emsp; objectName["propertyName]</p>
+	<br>
+	<p>Examples</p>
+	<div id="access"></div>
+	<div id="access2"></div>
+
+	<h2>Object Methods</h2>
+	<p>Methods are <strong>actions</strong> that can be performed on objects.</p>
+	<p>Example...function() {return this.firstName + " " + this.lastName;}</p>
 
 	<script>
 		
@@ -23,6 +36,17 @@
 		var statement = "Ok so for some reason, when you print the variable car, you get this... " + car + "." + " Just look in your console for a closer look!"
 
 		document.getElementById("objectex").innerHTML = statement; 
+
+		var accessProperty = car.type; 
+
+		// var accessColor = car[color]; ...won't work for some reason. Says uncaught ReferenceError: color is not defined. 
+
+		var accessColor = car.color; 
+
+		document.getElementById("access").innerHTML = accessProperty; 
+
+		document.getElementById("access2").innerHTML = accessColor; 
+
 
 
 	</script>
