@@ -27,6 +27,12 @@
 	<p>Methods are <strong>actions</strong> that can be performed on objects.</p>
 	<p>Example...function() {return this.firstName + " " + this.lastName;}</p>
 
+	<h3>Accessing Object Methods</h3>
+	<p>How? ... Use the following syntax: </p>
+	<p><strong>objectName.methodName()</strong></p>
+	<p>Example</p>
+	<div id="accessmethod"></div>
+
 	<script>
 		
 		// Create variable called car which is an object that containes many values. Values assigned to car variable.
@@ -39,6 +45,8 @@
 
 		var accessProperty = car.type; 
 
+
+		// Accessing Object Property 
 		// var accessColor = car[color]; ...won't work for some reason. Says uncaught ReferenceError: color is not defined. 
 
 		var accessColor = car.color; 
@@ -47,6 +55,26 @@
 
 		document.getElementById("access2").innerHTML = accessColor; 
 
+		// Accessing Object Method
+		// declare variable person store properties in object
+
+		var person = {
+			firstName: "Loretta",
+			lastName: "Agyemang",
+			age: 25,
+			eyeColor: "brown"
+
+			function fullname(firstName, lastName) {
+			return this.firstName + " " + this.lastName; 
+		}
+
+		}; 
+
+
+		// console.log(name); 
+		var hiMyNameIs = "Hi, my name is " + fullname + "!";
+
+		document.getElementById("accessmethod").innerHTML = hiMyNameIs; 
 
 
 	</script>
