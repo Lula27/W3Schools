@@ -24,6 +24,7 @@
 	<div id="access2"></div>
 
 	<h2>Object Methods</h2>
+	<p>A Method is a function inside an object.</p>
 	<p>Methods are <strong>actions</strong> that can be performed on objects.</p>
 	<p>Example...function() {return this.firstName + " " + this.lastName;}</p>
 
@@ -64,7 +65,7 @@
 			age: 25,
 			eyeColor: "brown"
 
-			function fullname(firstName, lastName) {
+			var myName = function fullname() {
 			return this.firstName + " " + this.lastName; 
 		}
 
@@ -72,7 +73,7 @@
 
 
 		// console.log(name); 
-		var hiMyNameIs = "Hi, my name is " + fullname + "!";
+		var hiMyNameIs = "Hi, my name is " + myName + "!";
 
 		document.getElementById("accessmethod").innerHTML = hiMyNameIs; 
 
