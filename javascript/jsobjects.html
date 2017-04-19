@@ -33,6 +33,9 @@
 	<p><strong>objectName.methodName()</strong></p>
 	<p>Example</p>
 	<div id="accessmethod"></div>
+	<div id="accessmethod2"></div>
+	<div id="accessmethod3"></div>
+	<div id="accessmethod4"></div>
 
 	<script>
 		
@@ -57,25 +60,29 @@
 		document.getElementById("access2").innerHTML = accessColor; 
 
 		// Accessing Object Method
-		// declare variable person store properties in object
+		// declare variable hotel and store properties in object
 
-		var person = {
-			firstName: "Loretta",
-			lastName: "Agyemang",
-			age: 25,
-			eyeColor: "brown"
-
-			var myName = function fullname() {
-			return this.firstName + " " + this.lastName; 
-		}
-
+		var hotel = {
+			name: "Quay",
+			rooms: 40,
+			booked: 25, 
+			gym: true,
+			roomTypes: ["twin", "double", "suite"],
+			checkAvailibility: function() {
+				return this.rooms - this.booked; 
+			}
 		}; 
 
+		// since the method is contained inside the object like Russian dolls, have to call object before approaching method 
 
-		// console.log(name); 
-		var hiMyNameIs = "Hi, my name is " + myName + "!";
+		document.getElementById("accessmethod").innerHTML = hotel.checkAvailibility; 
 
-		document.getElementById("accessmethod").innerHTML = hiMyNameIs; 
+
+		// Can also just contain it in a variable 
+			var method = hotel.checkAvailibility; 
+
+		document.getElementById("accessmethod2").innerHTML = method; 
+
 
 
 	</script>
