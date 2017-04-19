@@ -9,9 +9,14 @@
 	<h2>Exercise 1: </h2>
 	<p>Display "John" by extracting information from the person object</p>
 	<div id="ex1"></div>
+
+	<!-- Exercise 2 -->
+	<h2>Exercise 2: </h2>
+	<p>Add the follow property and value to the person object: <strong>country: USA</strong></p>
+	<div id="ex2"></div>
 	
 	<script>
-		
+	// Exercise 1
 	var person = {
 		firstName: "John",
 		lastName: "Smith", 
@@ -21,6 +26,16 @@
 	var name = person.firstName; 
 
 	document.getElementById("ex1").innerHTML = name; 
+
+	// Exercise 2
+	var personb = {
+		firstName: "Barak",
+		lastName: "Obama"
+	}; 
+
+	document.getElementById("ex2").innerHTML = personb.country; 
+
+
 
 	</script>
 
