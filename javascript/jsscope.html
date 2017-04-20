@@ -15,6 +15,11 @@
 	<p>Example: </p>
 	<div id="local"></div>
 
+	<h2>B. Global JavaScript Variables</h2>
+	<p>Global Variables- declared outside a function</p>
+	<p>A global variable has local scope: All scripts and functions on a web page can access it.</p>
+	<div id="global"></div>
+
 	<script>
 
 		// Local JavaScript Variables 
@@ -25,10 +30,26 @@
 		function myFunction() {
 			var carName = "Volvo";
 
-			console.log(carName); 
+			// console.log(carName); 
+
+			document.getElementById("local").innerHTML = carName; 
 		}
 
 		myFunction(); // Have to run function to get console.log to work! 
+
+
+		// Global scope 
+
+		var carName = "Volvo";
+
+		// Code here can use carName
+
+		function myFunction () {
+
+			document.getElementById("global").innerHTML = carName; 
+		}
+
+
 
 		
 
