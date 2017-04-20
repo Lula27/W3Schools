@@ -10,6 +10,27 @@
 	<h2>A. Local JavaScript Variables</h2>
 	<p><strong>Local Variables-</strong> variables declared within a function</p>
 	<p>Local variables have <strong>local scope:</strong> They can only be accessed within the function.</p>
+	<p>Example: </p>
+	<div id="local"></div>
+
+	<script>
+
+		// Local JavaScript Variables 
+
+		// console.log(carName);   - will say Uncaught ReferenceError: careName is not defined
+		// code outside of function can not be used b/c JS won't see it 
+
+		function myFunction() {
+			var carName = "Volvo";
+
+			console.log(carName); 
+		}
+
+		myFunction(); // Have to run function to get console.log to work! 
+
+		
+
+	</script>
 
 </body>
 </html>
