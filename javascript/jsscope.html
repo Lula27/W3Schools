@@ -11,7 +11,7 @@
 	<p><strong>Local Variables-</strong> variables declared within a function</p>
 	<p>Local variables have <strong>local scope:</strong> They can only be accessed/recognized within the function.</p>
 	<p>Because of ^ variables with the same name can be used in different functions.</p>
-	<p><strong>Local variables are created when a function starts and deleted with the function is completed.</p>
+	<p><strong>Local variables are created when a function starts and deleted with the function is completed.</strong></p>
 	<p>Example: </p>
 	<div id="local"></div>
 
@@ -20,25 +20,33 @@
 	<p>A global variable has local scope: All scripts and functions on a web page can access it.</p>
 	<div id="global"></div>
 
+	<h2>C. Automatically Global</h2>
+	<p>If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.</p>
+
+	<h2>Global Variables in HTML</h2>
+	<p>JavaScript - global scope = complete JavaScript enviornment</p>
+	<p>HTML - global scope = window object</p>
+	<p>All global variables belong to the window object.</p>
+
 	<script>
 
-		// Local JavaScript Variables 
+		// A. Local JavaScript Variables 
 
 		// console.log(carName);   - will say Uncaught ReferenceError: careName is not defined
 		// code outside of function can not be used b/c JS won't see it 
 
-		function myFunction() {
-			var carName = "Volvo";
+		function myFunction1() {
+			var hotelName = "Hilton";
 
 			// console.log(carName); 
 
-			document.getElementById("local").innerHTML = carName; 
+			document.getElementById("local").innerHTML = hotelName; 
 		}
 
-		myFunction(); // Have to run function to get console.log to work! 
+		myFunction1(); // Have to run function to get console.log to work! 
 
 
-		// Global scope 
+		// B. Global scope 
 
 		var carName = "Volvo";
 
@@ -50,8 +58,17 @@
 		}
 
 
+		// C. Automatically Global
+		// assign undeclared variable - code declares global variable carName, even if value is assigned inside a function
 
-		
+		myFunction(); 
+
+
+		// code here can use carName 
+
+		function myFunction() {
+			carName = "Volvo"; 
+		}
 
 	</script>
 
