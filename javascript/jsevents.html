@@ -15,7 +15,14 @@
 	<p>Example</p>
 	<div id="demo"></div>
 
+	<!-- JavaScript code changes content of HTML element with id= "demo" -->
+
 	<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+
+
+	<!-- JS code will change content of its own element (with this.innerHTML) -->
+
+	<buton onclick="this.innerHTML = Date()">What time is it?</buton>
 
 
 
