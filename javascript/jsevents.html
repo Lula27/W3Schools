@@ -12,33 +12,47 @@
 	<p>Or</p>
 	<h3>some-HTML-element some-event = "some JavaScript"</h3>
 
-	<p>Example</p>
-	<div id="demo"></div>
 
-	<p>Example 2</p>
-	<div id="demo2"></div>
-
-	<p>Example 3</p>
-	<div id="demo3"></div>
+	<p>Example 1</p>
+	<div id="demo1"></div>
 
 	<!-- Exercise 1 -->
-	<p onclick = "this.innerHTML = 'GOOD JOB!'">Click me.</p>
+	<p onclick = "this.innerHTML = 'GOOD JOB!'">CLICK HERE!</p>
+
+	<!-- Exercise 2 -->
+	<button onclick="myFunction()">Click Me!</button>
+
+	<p id="demo"></p>
+
+	<div id="demo2"></div>
+
+	<div id="demo3"></div>
 
 
 	<!-- JavaScript code changes content of HTML element with id= "demo" -->
 
-	<button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+	<button onclick="document.getElementById('demo1').innerHTML = Date()">The time is?</button>
 
 
 	<!-- JS code will change content of its own element (with this.innerHTML) -->
 
-	<!-- <buton onclick="this.innerHTML = Date()">What time is it?</buton> ...didn't see to work...why?--> 
+
 
 	<!-- More common to see event attributes calling functions: -->
-	<button onclick="Date()">Que hora es?</button>
+	<!-- GET TO WORK! -->
+	<button onclick="document.getElementById('demo 3').innerHTML = getMinutes()">Que hora es?</button>
+
+	<script>
+		// Excercise 2
+
+		function myFunction() {
+
+			document.getElementById("demo2").innerHTML = "Hello World!"; 
+		}
 
 
 
+	</script>
 
 
 </body>
