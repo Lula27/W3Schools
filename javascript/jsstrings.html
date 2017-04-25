@@ -14,6 +14,12 @@
 	<div id="two"></div>
 	<div id="three"></div>
 
+	<h2>String Length</h2>
+	<p>The length of a string is found in the built in property <strong>length</strong>:</p>
+	<div id="text"></div>
+	<div id="length"></div>
+
+
 	<script>
 		
 		// Ex 1
@@ -24,6 +30,15 @@
 		document.getElementById("one").innerHTML = answer1; 
 		document.getElementById("two").innerHTML = answer2; 
 		document.getElementById("three").innerHTML = answer3; 
+
+
+		// Length of a string
+		var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		var sln = txt.length;
+		var count = "My text is approximatly " + sln + " characters in length."
+
+		document.getElementById("text").innerHTML = txt;
+		document.getElementById("length").innerHTML = count;  
 
 	</script>
 
