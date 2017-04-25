@@ -40,7 +40,7 @@
 
 	<!-- More common to see event attributes calling functions: -->
 	<!-- GET TO WORK! -->
-	<button onclick="document.getElementById('demo 3').innerHTML = getMinutes()">Que hora es?</button>
+	<button onclick="document.getElementById('demo 3').innerHTML = dateFunction()">Cual es la fecha?</button>
 
 	<script>
 		// Excercise 2
@@ -53,13 +53,21 @@
 
 		// Get demo 3 section to work 
 
+		function dateFunction() {
+
 		var today = new Date(); 
 
 		// console.log(today); 
 
 		var now = today.toDateString();
 
-		console.log(now); 
+		var fechaHoy = "Bienvenido! Hoy es " + now; 
+
+		// console.log(now); 
+
+			document.getElementById("demo3").innerHTML = fechaHoy; 
+
+		} 
 
 	</script>
 
