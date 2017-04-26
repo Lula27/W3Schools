@@ -42,10 +42,13 @@
 	<p>Exercise 2: Use the length property to display the length of the the nutxt variable's value.</p>
 	<div id="ex2"></div>
 
+	<p>Exercise 3: The string below is broken - use escape characters to display the text correctly.</p>
+	<div id="ex3"></div>
+
 
 	<script>
 		
-		// Ex 1
+		// Example 1
 		var answer1 = "It's alright!"; 
 		var answer2 = "He is called 'Johnny'."; 
 		var answer3 = 'He is called "Johnny".'; 
@@ -83,7 +86,11 @@
 
 		document.getElementById("ex2").innerHTML = nutxtln; 
 
+		// Exercise 3
+		// document.getElementById("ex3").innerHTML = "We are "Vikings"."; BROKEN - Results in Uncaught SyntaxError: Unexpected identifier 
 
+		// Correct
+		document.getElementById("ex3").innerHTML = "We are \"Vikings\"."; 
 
 	</script>
 
