@@ -19,6 +19,14 @@
 	<div id="text"></div>
 	<div id="length"></div>
 
+	<h2>Special Characters</h2>
+	<p>Help JS to understand complex strings like the following:</p>
+	<p>var y = "We are the so-called "Vikings" from the north."</p>
+	<p>Solution: use the <strong>\ escape character</strong></p>
+	<p>The backslash escape character turns special characters into string characters!</p>
+	<p>Example</p>
+	<div id="backslash1"></div>
+	<div id="backslash2"></div>
 
 	<script>
 		
@@ -39,6 +47,11 @@
 
 		document.getElementById("text").innerHTML = txt;
 		document.getElementById("length").innerHTML = count;  
+
+
+		var x = 'It\'s alright!'; 
+
+		document.getElementById("backslash1").innerHTML = x; 
 
 	</script>
 
