@@ -9,10 +9,21 @@
 
 	<h2>Methods for Finding a String in a String</h2>
 	<p>A. <strong>indexOf()-</strong> returns the index of (the position of) the <strong>first</strong> occurence of a specified text in a string: </p>
-	<p>indexOf() Example</p>
 	<div id="exa"></div>
 	<p>B. <strong>lastIndexOf()-</strong> returns index of the <strong>last</strong> occurence of a specified text in a string:</p>
 	<div id="exb"></div>
+
+	<p>Caveats...</p>
+	<ul>
+		<li>Both methods accept second parameter as starting position for the search.</li>
+		<li>B/c js counts positions from zero...both indexOf() & lastIndexOf() methods return -1 if text is not found.</li>
+		<li>indexOf() & search() accept same arguements (parameters) and return the same value</li>
+		<li><strong>search() method can take much more powerful search values</strong></li>
+	</ul>
+
+	<h2>Searching for a String in a String</h2>
+	<p><strong>search()</strong> method searchers for a specified value and returns the position of the match: </p>
+	<div id="searchstr"></div>
 
 	<script>
 		
@@ -27,6 +38,13 @@
 		var pos2 = str.lastIndexOf("locate");
 
 		document.getElementById("exb").innerHTML = pos2;  
+
+		// search() method
+		var pos3 = str.search("locate"); 
+
+		document.getElementById("searchstr").innerHTML = pos3; 
+
+
 
 
 
