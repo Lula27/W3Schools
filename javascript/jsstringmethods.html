@@ -11,10 +11,26 @@
 	<p>A. <strong>indexOf()-</strong> returns the index of (the position of) the <strong>first</strong> occurence of a specified text in a string: </p>
 	<p>indexOf() Example</p>
 	<div id="exa"></div>
+	<p>B. <strong>lastIndexOf()-</strong> returns index of the <strong>last</strong> occurence of a specified text in a string:</p>
+	<div id="exb"></div>
 
-	<string>
+	<script>
 		
-	</string>
+		// Finding a String in a String
+		// indexOf() example 
+		var str = "Please locate where 'locate' occurs!"; 
+		var pos = str.indexOf("locate"); 
+
+		document.getElementById("exa").innerHTML = pos; 
+
+		// lastIndexOf() example
+		var pos2 = str.lastIndexOf("locate");
+
+		document.getElementById("exb").innerHTML = pos2;  
+
+
+
+	</script>
 
 </body>
 </html>
