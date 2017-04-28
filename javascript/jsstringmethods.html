@@ -32,6 +32,10 @@
 		<li><strong>substr</strong>(start, end)</li>
 	</ul>
 
+	<h2>splice() Method</h2>
+	<p><strong>splice()</strong> extracts a part of a string and returns the extracted part in a new string.</p>
+	<div id="splice"></div>
+
 	<script>
 		
 		// Finding a String in a String
@@ -52,7 +56,11 @@
 		document.getElementById("searchstr").innerHTML = pos3; 
 
 
+		// Splice 
+		var str = "Apple, Banana, Kiwi";
+		var res = str.slice(14, 19); 
 
+		document.getElementById("splice").innerHTML = res; 
 
 
 	</script>
