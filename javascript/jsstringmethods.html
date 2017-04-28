@@ -35,7 +35,12 @@
 	<h2>splice() Method</h2>
 	<p><strong>splice()</strong> extracts a part of a string and returns the extracted part in a new string.</p>
 	<div id="splice"></div>
+
 	<div id="nsplice"></div>
+
+	<h2>substring() Method</h2>
+	<p><strong>substring()</strong> is similar to splice() but it doesn't accept negative indexes.</p>
+	<div id="substr"></div>
 
 	<script>
 		
@@ -66,6 +71,20 @@
 	 	var nres = str.slice(-12, -6); 
 
 	 	document.getElementById("nsplice").innerHTML = nres; 
+
+	 	// Omit second variable...hmmm not working?
+	 	// var nosecres = str.splice(7); 
+
+	 	// document.getElementById("splice2").innerHTML = nosecres
+
+
+	 	// substr() Method
+	 	var anotherstr = "Apple, Punana, Kiwi";
+	 	var sub = anotherstr.substr(7, 6); 
+
+	 	document.getElementById("substr").innerHTML = sub; 
+
+
 
 	</script>
 
