@@ -51,6 +51,20 @@
 
 	<div id="replace2"></div>
 
+	<div id="replace3"></div>
+
+	<div id="replace4"></div>
+
+
+	<h2>Converting to Upper and Lower Case</h2>
+	<p>A string is converted to upper case with <strong>toUpperCase():</strong></p>
+
+	<div id="upcase"></div>
+
+	<p>A string is converted to lower case with <strong>toLowerCase():</strong></p>
+
+	<div id="lowcase"></div>
+
 	<script>
 		
 		// Finding a String in a String
@@ -109,10 +123,33 @@
 	 	document.getElementById("replace1").innerHTML = statement; 
 
 
-	 	document.getElementById("replace2").innerHTML = replstate; 
+	 	document.getElementById("replace2").innerHTML = replstate;
+
+	 	 //  Replace all matches 
+	 	 var statement2 = "Work, I need to go to work.";
+
+	 	 var replaceOne = statement2.replace("work", "school");
+
+	 	 document.getElementById("replace3").innerHTML = replaceOne; 
+
+	 	 var replaceall = statement2.replace(/work/g, "school"); 
+
+	 	 // Can't seem to get it to work? Hmmmm....why? 
+	 	 document.getElementById("replace4").innerHTML = replaceall; 
 
 
+	 	 // toUpperCase() Example
+	 	 var myText = "I love him.";
 
+	 	 var myText2 = myText.toUpperCase(); 
+
+	 	 document.getElementById("upcase").innerHTML = myText2; 
+
+	 	 
+	 	 // toLowerCase() Example
+	 	 var loCase = myText2.toLowerCase();
+
+	 	 document.getElementById("lowcase").innerHTML = loCase; 
 
 	</script>
 
