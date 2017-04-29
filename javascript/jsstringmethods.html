@@ -43,6 +43,14 @@
 	<div id="substr"></div>
 	<div id="substr2"></div>
 
+	<h2>Replacing String Content</h2>
+	<p><strong>replace()</strong> method replaces a specified value with another value in a string: </p>
+	<p>By default, the replace() function replaces only the first match.</p>
+
+	<div id="replace1"></div>
+
+	<div id="replace2"></div>
+
 	<script>
 		
 		// Finding a String in a String
@@ -91,6 +99,18 @@
 	 	//  Splices the whole set of texts
 	 	document.getElementById("substr2").innerHTML = sub2; 
 	 	 
+
+	 	// Replace String Content 
+	 	var statement = "I need to go to work."; 
+
+	 	var replstate = statement.replace("work", "school");
+
+
+	 	document.getElementById("replace1").innerHTML = statement; 
+
+
+	 	document.getElementById("replace2").innerHTML = replstate; 
+
 
 
 
