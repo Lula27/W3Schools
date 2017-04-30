@@ -79,9 +79,15 @@
 	<h2>Extracting String Characters</h2>
 	<p>May use the following methods:</p>
 	<ul>
-		<li>charAt(position)</li>
-		<li>charCodeAt(position)</li>
+		<li><strong>charAt(position)</strong>- returns the unicode of character at a specified index in a string: </li>
+		<div id="unicode"></div>
+		<li><strong>charCodeAt(position)</strong>- returns unicode of the character at a specified index in a string: </li>
+		<div id="unicode2"></div>
 	</ul>
+
+	<h2>Converting a String to an Array</h2>
+	<p>A string can be converted to an array with the <strong>split()</strong> method: </p>
+	<div id="strtoarr"></div>
 
 	
 
@@ -183,6 +189,29 @@
 
 
 	 	 document.getElementById("joinstrings2").innerHTML = newWord; 
+
+
+	 	 // charAt() Method example 
+	 	 var saying = "HELLO WORLD"; 
+	 	 var char = saying.charAt(0);
+
+	 	 document.getElementById("unicode").innerHTML = char; 
+
+	 	 // charCodeAt() Method
+	 	 var saying; 
+
+	 	 var char2 = saying.charCodeAt(0); 
+
+	 	 document.getElementById("unicode2").innerHTML = char2; 
+
+
+	 	 // Converting String to an Array
+	 	 // var letters = "a, b, c, d, e"; // String 
+	 	 // var commas = letters.split(","); 
+	 	 // var spaces = letters.slit(" ");
+	 	 // var pipe = letters.split("|"); 
+
+	 	 // document.getElementById("strtoarr").innerHTML = commas; 
 
 
 	</script>
