@@ -10,18 +10,31 @@
 	<div id="demo1"></div>
 	<div id="ex1"></div>
 	<h2>Exercise 2</h2>
+	<p>Use the splice() method to display only "Banana, Kiwi".</p>
+	<div id="demo2"></div>
+	<div id="ex2"></div>
 	<h2>Exercise 3</h2>
 	<h2>Exercise 4</h2>
 	<h2>Exercise 5</h2>
 	<h2>Exercise 6</h2>
 	
 	<script>
+	// EXERCISE 1
 	var txt = "Hello World"; 
 	document.getElementById("demo1").innerHTML = txt;
 
 	var position = txt.indexOf("World");
 	// console.log(position);  
 	document.getElementById("ex1").innerHTML = position; 
+
+	// EXERCISE 2
+	var str = "Apple, Banana, Kiwi"; 
+	document.getElementById("demo2").innerHTML = str; 
+
+	var display = str.slice(7, 19); 
+	// console.log(display); 
+	document.getElementById("ex2").innerHTML = display; 
+
 		
 	</script>
 </body>
