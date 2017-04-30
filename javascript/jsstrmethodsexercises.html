@@ -26,6 +26,10 @@
 	<div id="demo5"></div>
 	<div id="ex5"></div>
 	<h2>Exercise 6</h2>
+	<p>Use the concat() method to join the two strings: str1 & str2.</p>
+	<div id="demo6"></div>
+	<div id="demo6b"></div>
+	<div id="ex6">
 	
 	<script>
 	// EXERCISE 1
@@ -81,6 +85,17 @@
 
 	document.getElementById("ex5").innerHTML = lowCase; 
 
+
+	// EXERCISE 6
+
+	var str1 = "Hello ";
+	var str2 = "World!"; 
+	var twoStrings = str1.concat(str2); 
+	console.log(twoStrings); 
+
+	document.getElementById("demo6").innerHTML = str1; 
+	document.getElementById("demo6b").innerHTML = str2;
+	document.getElementById("ex6").innerHTML = twoStrings; 
 
 	</script>
 </body>
