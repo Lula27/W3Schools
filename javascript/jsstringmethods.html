@@ -65,6 +65,26 @@
 
 	<div id="lowcase"></div>
 
+	<h2>The concat() Method</h2>
+	<p><strong>concat()</strong> joins two or more strings:</p>
+
+	<div id="joinstrings"></div>
+
+	<p>Old way: var text = "Hello" + " " + "World!";</p>
+
+	<div id="joinstrings2"></div>
+
+	<p><strong>Strings are immutable: Strings cannot be changed, only replaced. All string methods return a new string. They don't modify the original string. </strong></p>
+
+	<h2>Extracting String Characters</h2>
+	<p>May use the following methods:</p>
+	<ul>
+		<li>charAt(position)</li>
+		<li>charCodeAt(position)</li>
+	</ul>
+
+	
+
 	<script>
 		
 		// Finding a String in a String
@@ -150,6 +170,20 @@
 	 	 var loCase = myText2.toLowerCase();
 
 	 	 document.getElementById("lowcase").innerHTML = loCase; 
+
+	 	 // Concat() Method Example
+	 	 var firstWord = "Hello";
+	 	 var secondWord = "World";
+	 	 var bothWords = firstWord.concat(" ", secondWord); 
+
+	 	 // Same thing, just a different version compared to what you're used to...
+	 	 var newWord = "Hello" + " " + "World!"; 
+
+	 	 document.getElementById("joinstrings").innerHTML = bothWords; 
+
+
+	 	 document.getElementById("joinstrings2").innerHTML = newWord; 
+
 
 	</script>
 
