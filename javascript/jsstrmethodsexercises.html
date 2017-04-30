@@ -31,9 +31,16 @@
 	var str = "Apple, Banana, Kiwi"; 
 	document.getElementById("demo2").innerHTML = str; 
 
-	var display = str.slice(7, 19); 
+	// Different ways to reach same result...!!! Also, it appears splice is inconsistant. Sometimes works, sometimes doesn't. 
+	// Method 1
+	// var display = str.slice(7, 19); 
 	// console.log(display); 
-	document.getElementById("ex2").innerHTML = display; 
+
+	// Method 2 
+	var str = "Apple, Banana, Kiwi"; 
+	var display2 = str.slice(6) 
+	console.log(display2); 
+	// document.getElementById("ex2").innerHTML = display2; 
 
 		
 	</script>
