@@ -6,11 +6,23 @@
 <body>
 	<h1>Test Yourself with Exercises!</h1>
 	<h2>Exercise 1</h2>
+	<p>Display the position of the first occurence of "World" in the variable txt.</p>
+	<div id="demo1"></div>
+	<div id="ex1"></div>
 	<h2>Exercise 2</h2>
 	<h2>Exercise 3</h2>
 	<h2>Exercise 4</h2>
 	<h2>Exercise 5</h2>
 	<h2>Exercise 6</h2>
+	
+	<script>
+	var txt = "Hello World"; 
+	document.getElementById("demo1").innerHTML = txt;
 
+	var position = txt.indexOf("World");
+	// console.log(position);  
+	document.getElementById("ex1").innerHTML = position; 
+		
+	</script>
 </body>
 </html>
