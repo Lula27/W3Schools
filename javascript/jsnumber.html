@@ -8,6 +8,11 @@
 	<h1>JavaScript Numbers</h1>
 	<p>JavaScript has only one type of number. Numbers can be written with, or without, decimals</p>
 	<p>JavaScript Numbers are Always 64-bit Floating Point.</p>
+	<p>JS doesn't define different types of numbers (ie: integers, short, long, floating-point etc)</p>
+	<p>This differes from other programming languages.</p>
+
+	<h2>Precision</h2>
+	<p>Integerts (numbers w/o a period or exponent notation) are considered accurate up to 15 digits.</p>
 	
 	<script>
 		// Examples of JavaScript Numbers
@@ -18,7 +23,14 @@
 		var a = 123e5;
 		var b = 123e-5; 
 
-		console.log(b); 
+		// console.log(a); 
+
+		// Precision
+		var c = 999999999999999;   // Maintains accuracy
+		var d = 99999999999999999; // Rounds to 100000000000000000
+
+		// console.log(d); 
+
 
 
 	</script>
