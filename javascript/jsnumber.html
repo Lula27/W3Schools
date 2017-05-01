@@ -25,6 +25,10 @@
 	<p>Possible to use toString() method to output numbers as base 16 (hex), base 8 (octal), or base 2 (binary).</p>
 	<img src="images/hexadecimals.jpg">
 
+	<h2>Infinity</h2>
+	<p>JS will return Infinity or (-Infinity) if you calculate a number outside the largest possible number.</p>
+	<div id="infinate"></div>
+
 	
 	<script>
 		// Examples of JavaScript Numbers
@@ -56,7 +60,19 @@
 
 		document.getElementById("solve").innerHTML = redo; 
 
+		// INFINITE 
+		var myNumber = 2; 
+		while (myNumber != Infinity) {
+			myNumber = myNumber * myNumber; 
+		}
 
+		document.getElementById("infinate").innerHTML = myNumber; 
+
+		// More examples
+		var g = 2 / 0; 
+		var h = -2 / 0; 
+
+		// console.log(g); 
 
 	</script>
 
