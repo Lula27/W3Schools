@@ -33,6 +33,18 @@
 	<p>NaN is a JavaScript reserved word indicating that a number is not a legal number.</p>
 	<p>myNan = 100/ "Apple"</p>
 	<div id="demo"></div>
+	<p>If you use NaN in a mathematical operation, the result will also be NaN or a concatenation (ie: Nan5).</p>
+	<p>NaN is a number, and type of NaN returns a number.</p>
+
+	<h2>Numbers Can by Objects</h2>
+	<p>Just like you can turn strings into objects using newString(), you can do the same for numbers (also primitive values) with newNumber(). You shouldn't however because it slows down execution speed</p>
+	<p>The following happens if you make a number an object.</p>
+	<ul>
+		<li>When using the === operator, equal numbers will not be equal, because the === operator evaluates for equality in both type and value</li>
+		<img src="images/triplequal.jpg">
+		<li>Objects cannot be compared.</li>
+		<img src="images/compare.jpg">
+	</ul>
 	
 	
 	<script>
@@ -95,7 +107,7 @@
 		// If the string contains a numeric value , the result will be a number:
 		var numeric = 100 / "10"; // Results in the number 10 
 
-		console.log(numeric);
+		// console.log(numeric);
 
 	</script>
 
