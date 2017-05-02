@@ -9,11 +9,27 @@
 	<p>Create a variable called myNumber, assign the value 50 to it, and display it.</p>
 	<div id="ex1"></div>
 
+	<h2>Exercise 2</h2>
+	<p>The value of z should be 11. Find out what's wrong and fix it.</p>
+	<img src="images/exercise2.jpg">
+	<p>The equation above evaluates to 56. This is because you are adding a number and a string. It results in a concatnation between the number (5) and the string ("6").</p>
+	<div id="ex2"></div>
+
+
 	<script>
 		
 		// EXERCISE 1
 		var myNumber = 50; 
 		document.getElementById("ex1").innerHTML = myNumber; 
+
+
+		// EXERCISE 2
+		var x = 5;
+		var y = 6;
+		var z = x + y;
+
+		var correct = "I corrected the error. The correct value is of z = x + y is "
+		document.getElementById("ex2").innerHTML = z; 
 
 
 	</script>
