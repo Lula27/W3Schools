@@ -29,6 +29,11 @@
 	<p>JS will return Infinity or (-Infinity) if you calculate a number outside the largest possible number.</p>
 	<div id="infinate"></div>
 
+	<h2>NaN - Not a Number</h2>
+	<p>NaN is a JavaScript reserved word indicating that a number is not a legal number.</p>
+	<p>myNan = 100/ "Apple"</p>
+	<div id="demo"></div>
+	
 	
 	<script>
 		// Examples of JavaScript Numbers
@@ -76,7 +81,21 @@
 
 		var what = typeof g; 
 
-		console.log(what);
+		// console.log(what);
+
+
+		// NaN - Not a Number
+		var myNan = 100/ "Apple";
+
+		var eval = "The expression above will be evaluated as " + myNan; 
+
+		document.getElementById("demo").innerHTML = eval; 
+
+
+		// If the string contains a numeric value , the result will be a number:
+		var numeric = 100 / "10"; // Results in the number 10 
+
+		console.log(numeric);
 
 	</script>
 
