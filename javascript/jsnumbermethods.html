@@ -36,6 +36,11 @@
 	<div id="numpre"></div>
 	<div id="numfix"></div>
 
+	<h2>toPrecision( ) Method</h2>
+	<p><strong>toPrecision( )</strong> returns a string, with a number written with a specified length: </p>
+	<div id="anum"></div>
+	<div id="precise"></div>
+
 	<script>
 		
 	// toString() Method
@@ -78,6 +83,22 @@
 
 	var commentary = "Notice that x.toFixed(0) results in " + fix1 + " and x.toFixed(2) results in " + fix2;
 	document.getElementById("numfix").innerHTML = commentary; 
+
+
+	// toPrecision()
+	var d = 70.583
+
+	var pre1 = d.toPrecision(); // returns same number (70.583)
+	// console.log(pre1); 
+	var pre2 = d.toPrecision(2); 
+
+	var pre3 = d.toPrecision(4);
+
+	console.log(pre3); 
+
+	var statement = "Ok, so first of all, d = 70.583. Notice that .toPrecision() returns " + pre1 + "!" + " However if you use other parameters like d.toPrecision(2), yields (" + pre2 + "), you might get different values."; 
+
+	document.getElementById("precise").innerHTML = statement;  
 
 	</script>
 
