@@ -9,13 +9,17 @@
 	<p>With JS, methods and properties are also available to primitive values b/c JS treats primitive values as objects when executing methods and properties.</p>
 	<p><strong>All number methods can be used on any type of numbers (literals, variables, or expressions).</strong></p>
 
-	<h2>toString() Method</h2>
-	<p><strong>toString()</strong> returns a number as a string.</p>
+	<h2>toString( ) Method</h2>
+	<p><strong>toString( )</strong> returns a number as a string.</p>
+	<h3>Original Number </h3>
 	<div id="num1"></div>
 	<div id="classify"></div>
+
+	<h3>Post toString( )</h3>
 	<div id="tostr1"></div>
 	<div id="tostr2"></div>
 	<div id="tostr3"></div>
+	<div id="classify2"></div>
 
 	<script>
 		
@@ -30,8 +34,19 @@
 	var str1 = x.toString(); 
 	var str2 = (124).toString();
 	var str3 = (100 + 24).toString(); 
+	var category2 = typeof(str1, str2, str3);
+	console.log(category2); 
 
-	// console.log(str3);
+	var comment2 = "x.toString(); (124).toString(); (100 + 24).toString(); are all classified as a " + category2 + "!"; 
+
+
+	document.getElementById("tostr1").innerHTML = str1; 
+	document.getElementById("tostr2").innerHTML = str2; 
+	document.getElementById("tostr3").innerHTML = str3; 
+	document.getElementById("classify2").innerHTML = comment2; 
+
+	
+
 	
 
 	</script>
