@@ -11,12 +11,30 @@
 
 	<h2>toString() Method</h2>
 	<p><strong>toString()</strong> returns a number as a string.</p>
+	<div id="num1"></div>
+	<div id="classify"></div>
+	<div id="tostr1"></div>
+	<div id="tostr2"></div>
+	<div id="tostr3"></div>
 
 	<script>
 		
+	// toString() Method
+	var x = 124; 
+	var category = typeof(x); 
+	var comment = "My variable (x = 124) is a " + category + "!"; 
+	// console.log(category);
+	document.getElementById("num1").innerHTML = x; 
+	document.getElementById("classify").innerHTML = comment; 
 
+	var str1 = x.toString(); 
+	var str2 = (124).toString();
+	var str3 = (100 + 24).toString(); 
+
+	// console.log(str3);
+	
 
 	</script>
-	
+
 </body>
 </html>
