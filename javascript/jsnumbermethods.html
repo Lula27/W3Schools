@@ -29,6 +29,13 @@
 	<div id="orignum"></div>
 	<div id="expon"></div>
 
+	<h2>toFixed( ) Method</h2>
+	<p><strong>toFixed( )</strong> returns a string, with the number written with a specified number of decimals: </p>
+	<p>Example: <strong>x.toFixed(0)</strong></p>
+	<p>toFixed(2) is perfect for working with money! (rounds decimal point to two values (tens & ones cents)</p>
+	<div id="numpre"></div>
+	<div id="numfix"></div>
+
 	<script>
 		
 	// toString() Method
@@ -62,6 +69,15 @@
 	document.getElementById("expon").innerHTML = b;  
 
 	
+	// toFix()
+	var x = 9.656; 
+	document.getElementById("numpre").innerHTML = x; 
+
+	var fix1 = x.toFixed(0);
+	var fix2 = x.toFixed(2); 
+
+	var commentary = "Notice that x.toFixed(0) results in " + fix1 + " and x.toFixed(2) results in " + fix2;
+	document.getElementById("numfix").innerHTML = commentary; 
 
 	</script>
 
