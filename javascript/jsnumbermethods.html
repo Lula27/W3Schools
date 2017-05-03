@@ -11,6 +11,7 @@
 
 	<h2>toString( ) Method</h2>
 	<p><strong>toString( )</strong> returns a number as a string.</p>
+	<p>Example: <strong>x.toString( )</strong></p>
 	<h3>Original Number </h3>
 	<div id="num1"></div>
 	<div id="classify"></div>
@@ -20,6 +21,13 @@
 	<div id="tostr2"></div>
 	<div id="tostr3"></div>
 	<div id="classify2"></div>
+
+	<h2>toExponential( ) Method</h2>
+	<p><strong>toExponential( )</strong> returns a string, with a number rounded and written using exponential notation.</p>
+	<p>Use a parameter to define the number of characters behind the decimal point</p>
+	<p>Example: <strong>x.toExponential(2)</strong></p>
+	<div id="orignum"></div>
+	<div id="expon"></div>
 
 	<script>
 		
@@ -46,6 +54,12 @@
 	document.getElementById("classify2").innerHTML = comment2; 
 
 	
+	// toExponential()
+	var a = 9.765
+	document.getElementById("orignum").innerHTML = a;
+
+	var b = a.toExponential(2);
+	document.getElementById("expon").innerHTML = b;  
 
 	
 
