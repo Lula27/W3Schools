@@ -61,6 +61,19 @@
 	</ul>
 	<img src="images/globalmethods.jpg">
 
+	<h2>The Number( ) Method</h2>
+	<p><strong>Number( )</strong> can be used to convert JavaScript variables to numbers:</p>
+	<p>Example: <br>
+	x = true; <br>
+	Number(x);  // returns 1 </p>
+	<div id="var1"></div>
+	<div id="numero1"></div>
+	<div id="var2"></div>
+	<div id="numero2"></div>
+	<div id="var3"></div>
+	<div id="numero3"></div>
+
+
 	<script>
 		
 	// toString() Method
@@ -75,7 +88,7 @@
 	var str2 = (124).toString();
 	var str3 = (100 + 24).toString(); 
 	var category2 = typeof(str1, str2, str3);
-	console.log(category2); 
+	// console.log(category2); 
 
 	var comment2 = "x.toString(); (124).toString(); (100 + 24).toString(); are all classified as a " + category2 + "!"; 
 
@@ -114,7 +127,7 @@
 
 	var pre3 = d.toPrecision(4);
 
-	console.log(pre3); 
+	// console.log(pre3); 
 
 	var statement = "Ok, so first of all, d = 70.583. Notice that .toPrecision() returns " + pre1 + "!" + " However if you use other parameters like d.toPrecision(2), yields (" + pre2 + "), you might get different values."; 
 
@@ -130,6 +143,28 @@
 	document.getElementById("value2").innerHTML = g; 
 
 
+
+	// GLOBAL METHODS FOR CONVERTING A VARIABLE INTO A NUMBER
+
+	// The Number() Method
+	var alif = true;
+	var n1 = Number(alif); 
+	// console.log(n1); 
+	document.getElementById("var1").innerHTML = alif;
+	document.getElementById("numero1").innerHTML = n1;
+
+	// Example 2
+	var ba = false; 
+	var n2 = Number(ba); 
+	document.getElementById("var2").innerHTML = ba; 
+	document.getElementById("numero2").innerHTML = n2; 
+
+	// Example 3
+	var ta = new Date(); 
+	// console.log(ta); 
+	var n3 = Number(ta);
+	document.getElementById("var3").innerHTML = ta;
+	document.getElementById("numero3").innerHTML = n3; 
 
 
 	</script>
