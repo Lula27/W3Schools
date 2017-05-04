@@ -120,6 +120,11 @@
 	<p>Example: var hate = Number.MIN_VALUE;</p>
 	<div id="dt"></div>
 
+	<p>Using myNumber.MAX_VALUE, where myNumber is a variable, expression, or value, will return undefined: </p>
+	<p>Example: var x = y; <br>
+	var y = x.MAX_VALUE;  // y becomes undefined 
+	</p>
+	<div id="undef"></div>
 
 	<script>
 		
@@ -248,7 +253,12 @@
 	document.getElementById("love").innerHTML = lovely;
 
 	var hateful = Number.MIN_VALUE;
-	document.getElementById("dt").innerHTML = hateful;  
+	document.getElementById("dt").innerHTML = hateful;
+
+	// Undefined example
+	var hey = 6;
+	var heyThere = hey.MAX_VALUE;  
+	document.getElementById("undef").innerHTML =  heyThere; 
 
 	</script>
 
