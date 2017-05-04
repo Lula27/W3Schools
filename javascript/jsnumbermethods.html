@@ -38,8 +38,16 @@
 
 	<h2>toPrecision( ) Method</h2>
 	<p><strong>toPrecision( )</strong> returns a string, with a number written with a specified length: </p>
+	<p>Example: x.toPrecision( )</p>
 	<div id="anum"></div>
 	<div id="precise"></div>
+
+	<h2>valueOf( ) Method</h2>
+	<p><strong>valueOf( )</strong> returns a number as a number.</p>
+	<p>Example: x.valueOf( )</p>
+	<div id="myNum"></div>
+	<div id="value"></div>
+	<div id="value2"></div>
 
 	<script>
 		
@@ -99,6 +107,18 @@
 	var statement = "Ok, so first of all, d = 70.583. Notice that .toPrecision() returns " + pre1 + "!" + " However if you use other parameters like d.toPrecision(2), yields (" + pre2 + "), you might get different values."; 
 
 	document.getElementById("precise").innerHTML = statement;  
+
+
+	// valueOf() returns a number as a number.
+	var e = 123;
+	var f = e.valueOf(); 
+	var g = (100 + 25).valueOf(); 
+	document.getElementById("myNum").innerHTML = e; 
+	document.getElementById("value").innerHTML = f;
+	document.getElementById("value2").innerHTML = g; 
+
+
+
 
 	</script>
 
