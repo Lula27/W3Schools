@@ -70,14 +70,32 @@
 	<div id="numero1"></div>
 	<div id="var2"></div>
 	<div id="numero2"></div>
+	<p>Returns number of milliseconds since 1/1/1970.</p>
 	<div id="var3"></div>
 	<div id="numero3"></div>
 	<p>x = "10"</p>
 	<div id="var4"></div>
 	<div id="numero4"></div>
+	<p>If a number cannot be converted, NaN (Not a Number) is returned.</p>
 	<p>x = "10 20"</p>
 	<div id="var5"></div>
 	<div id="numero5"></div>
+
+	<h2>The parseInt( ) Method</h2>
+	<p><strong>parseInt( )</strong> parses a string and returns a whole number. Spaces are allowed. Only the first number is returned: </p>
+	<p>Examples</p>
+	<ul>
+		<li>parseInt("10");</li>
+		<div id="ex1"></div>
+		<li>parseInt("10.33");</li>
+		<div id="ex2"></div>
+		<li>parseInt("10 20 30");</li>
+		<div id="ex3"></div>
+		<li>parseInt("10 years");</li>
+		<div id="ex4"></div>
+		<li>parseInt("years 10");</li>
+		<div id="ex5"></div>
+	</ul>
 
 
 
@@ -185,6 +203,14 @@
 	document.getElementById("var5").innerHTML = fa;
 	document.getElementById("numero5").innerHTML = n5; 
 
+
+	// parseInt() Method
+	document.getElementById("ex1").innerHTML = parseInt("10"); 
+	document.getElementById("ex2").innerHTML = parseInt("10.33"); 
+	document.getElementById("ex3").innerHTML = parseInt("10 20 30");
+	document.getElementById("ex4").innerHTML = parseInt("10 years");
+
+	document.getElementById("ex5").innerHTML = parseInt("years 10");
 
 	</script>
 
