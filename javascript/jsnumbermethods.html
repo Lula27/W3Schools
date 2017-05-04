@@ -97,7 +97,20 @@
 		<div id="ex5"></div>
 	</ul>
 
-
+	<h2>The parseFloat( ) Method</h2>
+	<p><strong>parseFloat( )</strong> parses a string and returns a number. Spaces are allowed. Only the first number is returned.</p>
+	<ul>
+		<li>parseFloat("10");</li>
+		<div id="ej1"></div>
+		<li>parseFloat("10.33");</li>
+		<div id="ej2"></div>
+		<li>parseFloat("10 20 30");</li>
+		<div id="ej3"></div>
+		<li>parseFloat("10 years");</li>
+		<div id="ej4"></div>
+		<li>parseFloat("years 10");</li>
+		<div id="ej5"></div>
+	</ul>
 
 	<script>
 		
@@ -211,6 +224,14 @@
 	document.getElementById("ex4").innerHTML = parseInt("10 years");
 
 	document.getElementById("ex5").innerHTML = parseInt("years 10");
+
+
+	// parseFloat() Method 
+	document.getElementById("ej1").innerHTML = parseFloat("10"); 
+	document.getElementById("ej2").innerHTML = parseFloat("10.33");
+	document.getElementById("ej3").innerHTML = parseFloat("10 20 30");
+	document.getElementById("ej4").innerHTML = parseFloat("10 years");
+	document.getElementById("ej5").innerHTML = parseFloat("years 10");
 
 	</script>
 
