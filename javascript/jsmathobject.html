@@ -34,12 +34,10 @@
 	<h2>Math.ceil( )</h2>
 	<p>Math.ceil(x) returns the value of x rounded <strong>up</strong> to its nearest integer: </p>
 	<div id="ceiling"></div>
-
 	
 	<h2>Math.floor( )</h2>
 	<p>Math.floor(x) returns the value of x rounded <strong>down</strong> to its nearest integer: </p>
 	<div id="floor"></div>
-
 
 	<h2>Math.sin( )</h2>
 	<p>Math.sin(x) returns the sine (a value between -1 and 1) of the angle x (given in radians). </p>
@@ -47,6 +45,12 @@
 	<p><strong>Angle in radians = Angle in degrees x PI / 180</strong></p>
 	<p>Example: Math.sin(90 * Math.PI / 180); </p>
 	<div id="sine"></div>
+
+	<h2>Math.cos( )</h2>
+	<p>Math.cos(x) returns the cosine (btw -1 and 1) of the angle x (given in radians). Use following formula to convert degrees to radians: </p>
+	<p><strong>Angle in radians = Angle in degrees x PI / 180</strong></p>
+	<div id="cosine"></div>
+
 	
 	<script>
 		
@@ -77,6 +81,9 @@
 
 		// Math.sin()
 		document.getElementById("sine").innerHTML = Math.sin(90 * Math.PI / 180);
+
+		// Math.cos()
+		document.getElementById("cosine").innerHTML = Math.cos(0 * Math.PI / 180); 
 
 	</script>
 
