@@ -17,15 +17,30 @@
 	<p>document.getElementById("highest").innerHTML = Math.max(0, 150, 30, 20, -8);</p>
 	<div id="highest"></div>
 
+	<h2>Exercise 3</h2>
+	<p>Round "5.3" to the nearest integer, and display it.</p>
+	<div id="rounded"></div>
+
+	<h2>Exercise 4</h2>
+	<p>Display the square root of "9".</p>
+	<div id="sqroot"></div>
+
 	<script type="text/javascript">
 		
-	// Create random number
+	// Ex 1: Create random number
 	var rand = Math.random(); 
 
 	document.getElementById("rando").innerHTML = rand; 
 
-	// Display max value
+	// Ex 2: Display max value
 	document.getElementById("highest").innerHTML = Math.max(0, 150, 30, 20, -8); 
+
+
+	// Ex 3: Round 5.3 to nearest integer 
+	document.getElementById("rounded").innerHTML = Math.round(5.3); 
+
+	// Ex4: sqrt(9)
+	document.getElementById("sqroot").innerHTML = Math.sqrt(9); 
 
 	</script>
 
