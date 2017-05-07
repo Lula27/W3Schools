@@ -10,6 +10,12 @@
 	<p>Use the random() method to display a random number.</p>
 	<div id="rando"></div>
 
+	<h2>Exercise 2</h2>
+	<p>Fix the code to display the number with the highest value</p>
+	<p>document.getElementById("highest").innerHTML = Math(0, 150, 30, 20, -8);</p>
+	<p>Corrected:</p>
+	<p>document.getElementById("highest").innerHTML = Math.max(0, 150, 30, 20, -8);</p>
+	<div id="highest"></div>
 
 	<script type="text/javascript">
 		
@@ -17,6 +23,9 @@
 	var rand = Math.random(); 
 
 	document.getElementById("rando").innerHTML = rand; 
+
+	// Display max value
+	document.getElementById("highest").innerHTML = Math.max(0, 150, 30, 20, -8); 
 
 	</script>
 
