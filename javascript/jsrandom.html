@@ -28,6 +28,10 @@
 	<p>Math.floor(Math.random() * 10) &nbsp +  &nbsp 1;  &nbsp  // returns a number between 1 and 100</p>
 	<div id="ran6"></div>
 
+	<h2>A Proper Random Function</h2>
+	<p>Create random function to use for all random integer purposes.</p>
+	<div id="ran7"></div>
+
 	<script>
 		// Math.random 1
 		document.getElementById("ran1").innerHTML = Math.random(); 
@@ -48,7 +52,19 @@
 		// Random number btw 1 and 9
 		document.getElementById("ran6").innerHTML = Math.floor(Math.random() * 10)+ 1;
 
+		// Random number function   NOT WORKING...
+		// function getRndInteger(min, max) {
+		// 	return Math.floor(Math.random() * (max - min)) + min; 
+		// }
 
+		// getRndInteger();
+
+
+		// function getRndInteger2(min, max) {
+		// 	return Math.floor(Math.random() * (max - min + 1)) + min; 
+		// }
+
+		// getRndInteger2(); 
 	</script>
 
 </body>
