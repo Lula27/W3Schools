@@ -11,12 +11,41 @@
 		<li>String-<strong>Mon May 08 2017 09:44:19 GMT-0400 (Eastern Daylight Time)</strong></li>
 		<li>Number-<strong>1494251059068</strong> &nbsp Specifies number of milliseconds since January 1, 1970, 00:00:00.</li>
 	</ul>
-	
+
 	<p>Example:</p>
 	<p id="demo"></p>
 
+	<h2>Creating Date Objects</h2>
+	<p>Date consists of a year, month, day, hour, minute, second and milliseconds.</p>
+	<p>Create date objects with the <strong>new Date( )</strong> constructor.</p>
+	<p>Here are the <strong>4 ways</strong> of initiating a date:</p>
+	<ul>
+		<li><strong>new Date( )</strong></li>
+		<li>new Date(milliseconds)</li>
+		<li>new Date(dateString)</li>
+		<li>new Date(year, month, day, hours, minutes, seconds, milliseconds)</li>
+	</ul>
+	
+	<h2>new Date( )</h2>
+	<p>Using new Date( ), creates a new date object with the <strong>current date and time: </strong></p>
+	<div id="date1"></div>
+
+	<p>Using new Date(<strong>date string</strong>), creates a new date object from the <strong>specified date and time</strong>:</p>
+	<dir id="date2"></dir>
+	
+
 	<script>
 		document.getElementById("demo").innerHTML = Date(); 
+
+		// newDate() example
+
+		var d = new Date();
+		document.getElementById("date1").innerHTML = d; 
+
+		// newDatee(date, string)
+		var d2 = new Date("September 17, 1991 11:13:00");
+		document.getElementById("date2").innerHTML = d2; 
+
 	</script>
 
 </body>
