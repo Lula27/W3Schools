@@ -37,6 +37,10 @@
 	<p>Zero time is 01 Jan 1970 00:00:00 UTC. The nuber is specified in milliseconds:86400000</p>
 	<p>var d = new Date(86400000);</p>
 	<dir id="date3"></dir>
+
+	<li>Using new Date(<strong>7 numbers</strong>), creates a new date object with the <strong>specified date and time</strong>: </li>
+	<p>The 7 numbers specify the year, month, day, hour, minute, second, and milliseconds, in that order: </p>
+	<dir id="date4"></dir>
 	
 
 	<script>
@@ -55,6 +59,11 @@
 		// new Date(number)
 		var d3 = new Date(86400000);
 		document.getElementById("date3").innerHTML = d3; 
+
+		// new Date(7 numbers)
+		var d4 = new Date(99, 5, 24, 11, 33, 30, 0);
+		document.getElementById("date4").innerHTML = d4; 
+
 
 	</script>
 
