@@ -6,6 +6,8 @@
 <body>
 	<h1>JavaScript Dates</h1>
 	<p>The Date object lets you work with dates (years, months, days, hours, minutes, seconds, and milliseconds)</p>
+	<p>Date objects are static. The computer time is ticking, but date objects, once created, are not.</p>
+	<p>If you don't specify a <strong>time zone</strong>, JavaScript will use the browser's time zone.</p>
 	<h2>JavaScript Date Formats</h2>
 	<ul>
 		<li>String-<strong>Mon May 08 2017 09:44:19 GMT-0400 (Eastern Daylight Time)</strong></li>
@@ -41,6 +43,20 @@
 	<li>Using new Date(<strong>7 numbers</strong>), creates a new date object with the <strong>specified date and time</strong>: </li>
 	<p>The 7 numbers specify the year, month, day, hour, minute, second, and milliseconds, in that order: </p>
 	<dir id="date4"></dir>
+
+	<h2>Date Methods</h2>
+	<p>After creating a Date object, use various methods to operate on it.</p>
+	<p>Date methods let you get and set the year, month, day, hour, minute, second and milliseconds of objects, using their local time or UTC (universal, or GMT) time.</p>
+	<h3>Displaying Dates</h3>
+	<li>When you display a date object in HTML, it is automatically converted to a string, with the <strong>toString( )</strong> method.</li>
+	<div id="date5"></div>
+	<p>document.getElementById("string").innerHTML = d.toString();</p>
+	<div id="string"></div>
+	<li><strong>toUTCString( )</strong> method converts a date to a UTC string (a date display standard).</li>
+	<dir id="utc"></dir>
+	<li>The toDateString( ) method converts a date to a more readable format:</li>
+	<div id="last"></div>
+
 	
 
 	<script>
@@ -63,6 +79,21 @@
 		// new Date(7 numbers)
 		var d4 = new Date(99, 5, 24, 11, 33, 30, 0);
 		document.getElementById("date4").innerHTML = d4; 
+
+
+		// DATE OBJECT METHODS
+		// toString() method
+		var d5 = new Date();
+		document.getElementById("date5").innerHTML = d5; 
+
+		document.getElementById("string").innerHTML = d5.toString(); 
+
+		// toUTCString()
+		document.getElementById("utc").innerHTML = d5.toUTCString(); 
+
+
+		// toDateString()
+		document.getElementById("last").innerHTML = d5.toDateString(); 
 
 
 	</script>
