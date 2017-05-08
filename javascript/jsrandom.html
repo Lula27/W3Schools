@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random</title>
+</head>
+<body>
+	<h1>JavaScript Random</h1>
+	<h2>Math.random( )</h2>
+	<p>Math.random( ) returns a random number between 0 (inclusive) and 1 (exclusive). <strong>Returns a number less than 1.</strong></p>
+	<p>Math.random( );     // returns a random number 0  => x < 1</p>
+	<div id="ran1"></div>
+
+	<h2>JavaScript Random Integers</h2>
+	<p>Math.random( ) used with Math.floor( ) can be used to return random integers. </p>
+	<p>Math.floor(Math.random( ) * 10);  // returns a number between 0 and 9</p>
+	<div id="ran2"></div>
+
+	<script>
+		// Math.random 1
+		document.getElementById("ran1").innerHTML = Math.random(); 
+
+		// Random number btw 0 and 9
+		document.getElementById("ran2").innerHTML = Math.floor(Math.random() * 10); 
+
+	</script>
+
+</body>
+</html>
