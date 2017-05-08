@@ -7,13 +7,26 @@
 	<h1>JavaScript Random</h1>
 	<h2>Math.random( )</h2>
 	<p>Math.random( ) returns a random number between 0 (inclusive) and 1 (exclusive). <strong>Returns a number less than 1.</strong></p>
-	<p>Math.random( );     // returns a random number 0  => x < 1</p>
+	<p>Math.random( ); &nbsp  // returns a random number 0  => x < 1</p>
 	<div id="ran1"></div>
 
 	<h2>JavaScript Random Integers</h2>
 	<p>Math.random( ) used with Math.floor( ) can be used to return random integers. </p>
-	<p>Math.floor(Math.random( ) * 10);  // returns a number between 0 and 9</p>
+	<p>Math.floor(Math.random( ) * 10); &nbsp // returns a number between 0 and 9</p>
 	<div id="ran2"></div>
+
+	<p>Math.floor(Math.random( ) * 11); &nbsp // returns a number between 0 and 10</p>
+	<div id="ran3"></div>
+
+	<p>Math.floor(Math.random( ) * 100); &nbsp  // returns a number between 0 and 99</p>
+	<div id="ran4"></div>
+
+	<p>Math.floor(Math.random( ) * 101); &nbsp  // returns a number between 0 and 100</p>
+	<div id="ran5"></div>
+
+	<h2>Get Greater than 1: Just add 1</h2>
+	<p>Math.floor(Math.random() * 10) &nbsp +  &nbsp 1;  &nbsp  // returns a number between 1 and 100</p>
+	<div id="ran6"></div>
 
 	<script>
 		// Math.random 1
@@ -21,6 +34,20 @@
 
 		// Random number btw 0 and 9
 		document.getElementById("ran2").innerHTML = Math.floor(Math.random() * 10); 
+
+		// Random number btw 0 and 10
+		document.getElementById("ran3").innerHTML = Math.floor(Math.random() * 11); 
+
+		// Random number btw 0 and 99
+		document.getElementById("ran4").innerHTML = Math.floor(Math.random() * 100);
+
+
+		// Random number btw 0 and 100
+		document.getElementById("ran5").innerHTML = Math.floor(Math.random() * 101); 
+
+		// Random number btw 1 and 9
+		document.getElementById("ran6").innerHTML = Math.floor(Math.random() * 10)+ 1;
+
 
 	</script>
 
