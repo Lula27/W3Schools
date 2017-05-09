@@ -13,6 +13,13 @@
 	<p>Create a Date object with the following value: "January 10, 2015, 10:00:00".</p>
 	<div id="ex2"></div>
 
+	<h2>Exercise 3</h2>
+	<p>Use the toDateString( ) method to convert the date to a more readable format</p>
+	<p>document.getElementById("ex3").innerHTML = new Date();</p>
+	<p>Tue May 09 2017 11:31:22 GMT-0400 (Eastern Daylight Time)</p>
+	<div id="ex3"></div>
+
+
 <script>
 	
 	var date = new Date();
@@ -30,6 +37,12 @@
 
 	// Exercise 2 METHOD 2
 	// document.getElementById("ex2").innerHTML = new Date("January 10, 2015, 10:00:00");
+
+
+	// Exercise 3
+	document.getElementById("ex3").innerHTML = new Date().toDateString(); 
+
+
 
 </script>
 
