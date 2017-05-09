@@ -20,16 +20,16 @@
 	document.getElementById("ex1").innerHTML = date; 
 
 
-	// Exercise 2 INCORRECT 
-	// var janDate = new Date (2015, 00, 10, 10, 0, 0, 0);
+	// Exercise 2 THAT'S FINE. DIFFERENT METHOD, SAME RESULT
+	var janDate = new Date (2015, 00, 10, 10, 0, 0, 0);
 	// var fix = janDate.toUTCString();
 	// console.log(janDate);
 	// console.log(fix);
 
-	// document.getElementById("ex2").innerHTML = janDate;
+	document.getElementById("ex2").innerHTML = janDate;
 
-	// Exercise 2 CORRECT
-	document.getElementById("ex2").innerHTML = new Date("January 10, 2015, 10:00:00");
+	// Exercise 2 METHOD 2
+	// document.getElementById("ex2").innerHTML = new Date("January 10, 2015, 10:00:00");
 
 </script>
 
