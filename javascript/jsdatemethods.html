@@ -8,18 +8,33 @@
 	<p>Use date methods to set date values (years, months, days, hours, minutes, seconds, milliseconds).</p>
 	<img src="images/dateget.jpg">
 
-	<h2>The getTime( ) Method</h2>
+	<h3>The getTime( ) Method</h3>
 	<p><strong>getTime( )</strong> returns the number of milliseconds since January 1, 1970.</p>
 	<div id="gt"></div>
 
+	<h3>The getFullYear( ) Method</h3>
+	<p><strong>getFullYear( )</strong> returns the year of a date as a four digit number: </p>
+	<div id="gfy"></div>
+
+	<h3>getDay( ) Method</h3>
+	<p>Make an array of names and use getDay( ) to return the weekday as a name: </p>
+	<p>document.getElementById("demo").innerHTML = days[d.getDay()];</p>
+	<div id="gd"></div>
+
 	<script>
-		
+	
+	// .getTime()
 	var d = new Date(); 
 
 	document.getElementById("gt").innerHTML = d.getTime(); 
 
 
+	// .getFullYear()
+	document.getElementById("gfy").innerHTML = d.getFullYear();
 
+	// .getDay()
+	var days = ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"]; 
+	document.getElementById("gd").innerHTML = days[d.getDay()]; 
 
 	</script>
 
