@@ -48,15 +48,18 @@
 	var days = ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"]; 
 	document.getElementById("gd").innerHTML = days[d.getDay()]; 
 
-	// DATE SET METHOD
+	// DATE SET METHOD...DOESN'T SEEM TO BE WORKING :/ 
 	var newDay = new Date();
-	newDay.setFullYear(2020, 0, 14); 
+	var d1 = newDay.setFullYear(2020, 0, 14); 
 
-	document.getElementById("fy").innerHTML = newDay; 
+	document.getElementById("fy").innerHTML = d1; 
 
 
 	// setDate() Method
-	document.getElementById("day").innerHTML = newDay.setDate(20); 
+	var d = new Date();
+	var d2 = d.setDate(20); 
+
+	document.getElementById("day").innerHTML = d2; 
 
 
 
