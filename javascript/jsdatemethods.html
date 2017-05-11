@@ -21,6 +21,18 @@
 	<p>document.getElementById("demo").innerHTML = days[d.getDay()];</p>
 	<div id="gd"></div>
 
+	
+	<!-- SetDate Method -->
+	<img src="images/dateset.jpg">
+
+	<h3>setFullYear( ) Method</h3>
+	<p><strong>setFullYear( )</strong>sets a date object to a specific date.</p>
+	<div id="fy"></div>
+
+	<h3>setDate( ) Method</h3>
+	<p><strong>setDate( )</strong> sets the day of the month (1-31):</p>
+	<div id="day"></div>
+
 	<script>
 	
 	// .getTime()
@@ -35,6 +47,18 @@
 	// .getDay()
 	var days = ["Sunday", "Monday", "Tuesday", "Thursday", "Friday", "Saturday"]; 
 	document.getElementById("gd").innerHTML = days[d.getDay()]; 
+
+	// DATE SET METHOD
+	var newDay = new Date();
+	newDay.setFullYear(2020, 0, 14); 
+
+	document.getElementById("fy").innerHTML = newDay; 
+
+
+	// setDate() Method
+	document.getElementById("day").innerHTML = newDay.setDate(20); 
+
+
 
 	</script>
 
