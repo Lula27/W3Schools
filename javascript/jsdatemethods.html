@@ -30,11 +30,16 @@
 	<div id="fy"></div>
 
 	<h3>setDate( ) Method</h3>
-	<p><strong>setDate( )</strong> sets the day of the month (1-31):</p>
+	<p><strong>setDate( )</strong> sets the day of the month (1-31): myDate.setDate(15);</p>
 	<div id="day"></div>
 
 	<h3>Also use setDate( ) Method to <strong>add days</strong> to a date:</h3>
 	<div id="addday"></div>
+
+	<h3>Date Input - Parsing Dates</h3>
+	<p>With a valid date string, you can use the <strong>Date.parse( )</strong> method to convert it to milliseconds.</p>
+	<p>Returns the number of milliseconds btw the date and January 1, 1970.</p>
+	<div id="dinput"></div>
 
 
 	<script>
@@ -69,6 +74,11 @@
 	var miFecha = new Date();
 	miFecha.setDate(miFecha.getDate() + 50);
 	document.getElementById("addday").innerHTML = miFecha;
+
+
+	// Date Input - Parsing Dates
+	var msec = Date.parse("March 21, 2012");
+	document.getElementById("dinput").innerHTML = msec; 
 
 
 	</script>
