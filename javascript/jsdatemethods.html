@@ -42,6 +42,12 @@
 	<div id="dinput"></div>
 	<div id="statement"></div>
 
+	<h3>Compare Dates</h3>
+	<p>Dates can be easily compared.</p>
+	<p>The following example compares today's date with January 14, 2100: </p>
+	<div id="compare"></div>
+
+	<img src="images/utcdatemtds.jpg">
 
 	<script>
 	
@@ -85,6 +91,22 @@
 
 	document.getElementById("statement").innerHTML = text; 
 
+
+	// Compare Dates - The following example compares today's date with January 14, 2100:
+
+	var today, someday, txt; 			// create variables
+	today = new Date();					// Assign variables
+	someday = new Date();
+	someday.setFullYear(2100, 0, 14);	// set future date
+
+	// use if-else statement to compare dates
+
+	if (someday > today) {
+		txt = "Today is before January 14, 2100.";
+	} else {
+		txt = "Today is after January 14, 2100."; 
+	}
+	document.getElementById("compare").innerHTML = txt; 
 
 	</script>
 
