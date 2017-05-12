@@ -40,6 +40,7 @@
 	<p>With a valid date string, you can use the <strong>Date.parse( )</strong> method to convert it to milliseconds.</p>
 	<p>Returns the number of milliseconds btw the date and January 1, 1970.</p>
 	<div id="dinput"></div>
+	<div id="statement"></div>
 
 
 	<script>
@@ -78,7 +79,11 @@
 
 	// Date Input - Parsing Dates
 	var msec = Date.parse("March 21, 2012");
-	document.getElementById("dinput").innerHTML = msec; 
+	var daDate = new Date(msec); 
+	document.getElementById("dinput").innerHTML = daDate; 
+	var text = "This is exactly " + msec + " since January 1, 1970. "; 
+
+	document.getElementById("statement").innerHTML = text; 
 
 
 	</script>
