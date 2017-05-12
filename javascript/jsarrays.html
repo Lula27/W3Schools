@@ -18,6 +18,10 @@
 	<p>fruits.push("Lemon");</p>
 	<div id="push"></div>
 
+	<h3>B. Length Property</h3>
+	<p>fruits[fruits.length] = "Lemon";</p>
+	<div id="lenprop"></div>
+
 	<script>
 		
 	var fruits, text, fLen, i; 
@@ -41,10 +45,16 @@
 	// add element to an array
 	var fruits = ["Banana", "Orange", "Apple", "Mango"];
 
-	// add lemon to fruits
+	// A. Use push method add lemon to fruits
 	fruits.push("Lemon"); 
 
 	document.getElementById("push").innerHTML = fruits;
+
+	// B. Use lenght property to add lemon to fruits
+	fruits[fruits.lenght] = "Lemon"; 
+
+	document.getElementById("lenprop").innerHTML = fruits; 
+
 
 	</script>
 
