@@ -12,6 +12,12 @@
 	<h2>Looping Array Elements</h2>
 	<div id="loopdloop"></div>
 
+	<h2>Adding Array Elements</h2>
+	<h3>A. (easiest) Push Method</h3>
+	<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+	<p>fruits.push("Lemon");</p>
+	<div id="push"></div>
+
 	<script>
 		
 	var fruits, text, fLen, i; 
@@ -30,6 +36,15 @@
 	}
 
 	document.getElementById("loopdloop").innerHTML = text; 
+
+
+	// add element to an array
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+	// add lemon to fruits
+	fruits.push("Lemon"); 
+
+	document.getElementById("push").innerHTML = fruits;
 
 	</script>
 
