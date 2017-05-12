@@ -9,5 +9,29 @@
 	<p>Example:</p>
 	<p>var cars = ["Saab", "Volvo", "BMW"];</p>
 
+	<h2>Looping Array Elements</h2>
+	<div id="loopdloop"></div>
+
+	<script>
+		
+	var fruits, text, fLen, i; 
+
+	fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fLen = fruits.length; 
+	text = "<ul>";
+
+
+	// Create for loop...loop through each instance [i] of variable/array fruit 
+	for (i = 0; i <
+
+	 fLen; i++) {
+
+		text += "<li>" + fruits[i] + "</li>"; 
+	}
+
+	document.getElementById("loopdloop").innerHTML = text; 
+
+	</script>
+
 </body>
 </html>
