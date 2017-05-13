@@ -8,7 +8,7 @@
 	<p>Use JavaScript arrays to store multiple values in a single variable.</p>
 	<p>Example</p>
 	<p>var cars = ["Saab", "Volvo", "BMW"];</p>
-	
+
 	<p><strong>Arrays</strong> use <strong>numbered indexes</strong>.</p>
 	<p><strong>Objects</strong> use <strong>named indexes</strong>.</p>
 	<p>***Arrays are a special kind of objects, with numbered indexes.***</p>
@@ -23,7 +23,6 @@
 		<li>Use <strong>arrays</strong> when you want the element names to be <strong>numbers</strong></li>
 	</ul>
 
-
 	<h2>Looping Array Elements</h2>
 	<div id="loopdloop"></div>
 
@@ -36,6 +35,20 @@
 	<h3>B. Length Property</h3>
 	<p>fruits[fruits.length] = "Lemon";</p>
 	<div id="lenprop"></div>
+
+	<h2>How to Recognize an Array</h2>
+	<h3>A. <strong>typeof</strong></h3>
+	<div id="type"></div>
+	<h3>B. <strong>Array.isArray()</strong></h3>
+	<div id="isarr"></div>
+	<p>As we can tell above with the result of "true", the ECMAScript 5 is supported in this browser. In older browsers, it may not be supported. </p>
+	<h3>C. Create your own isArray( ) function:</h3>
+	<p>function isArray(x) { <br>
+    return x.constructor.toString().indexOf("Array") > -1; <br>
+	}</p>
+	<p>Result after running function: ...CURRENTLY NOT WORKING <div id="result"></div></p>
+	<h3>D. <strong>instanceof</strong> operator - returns true if an object is created by a given constructor: </h3>
+	<div id="instance"></div>
 
 	<script>
 		
@@ -70,6 +83,22 @@
 
 	document.getElementById("lenprop").innerHTML = fruits; 
 
+	// How to Recognize an Array
+	var identity = "The JavaScript operator typeof returns " + typeof(fruits) + " because a JavaScript array is an object."
+
+	document.getElementById("type").innerHTML = identity; 
+
+	// B. Array.isArray()
+	document.getElementById("isarr").innerHTML = Array.isArray(fruits); 
+
+	// C. My Array function...MMMNNN, NOT WORKING :/ 
+	// function isArray(fruits) {
+	// 	return x.fruits.toString().indexOf("fruits") > -1; 
+	// }
+	// document.getElementById("result").innerHTML = isArray(); 
+
+	// D. Instance of
+	document.getElementById("instance").innerHTML = fruits instanceof Array; 
 
 	</script>
 
