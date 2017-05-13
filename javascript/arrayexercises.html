@@ -21,6 +21,12 @@
 	<p>Use the length property to display the number of array items in cars.</p>
 	<div id="ex4"></div>
 
+	<h3>Exercise 5:</h3>
+	<p>Use the length property to add a new item to cars: Mercedes.</p>
+	<div id="ex5"></div>
+	<p>Using push property</p>
+	<div id="push"></div>
+
 
 	<script>
 		
@@ -42,6 +48,11 @@
 
 		// Exercise 4
 		document.getElementById("ex4").innerHTML = cars.length; 
+
+		// Exercise 5
+		var carsOriginal = ["Saab", "Volvo", "BMW"];
+		carsOriginal.push("Mercedes")	
+		document.getElementById("push").innerHTML = carsOriginal; 
 
 	</script>
 
