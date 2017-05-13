@@ -51,8 +51,15 @@
 
 		// Exercise 5
 		var carsOriginal = ["Saab", "Volvo", "BMW"];
-		carsOriginal.push("Mercedes")	
-		document.getElementById("push").innerHTML = carsOriginal; 
+
+		carsOriginal[carsOriginal.length] = "Mercedes"; 
+
+		document.getElementById("ex5").innerHTML = carsOriginal; 
+
+		var cars2 = ["Saab", "Volvo", "BMW"];
+
+		cars2.push("Mercedes")	
+		document.getElementById("push").innerHTML = cars2; 
 
 	</script>
 
