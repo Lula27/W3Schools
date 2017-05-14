@@ -16,6 +16,14 @@
 	<p>Example: <strong>.join(" * ");</strong></p>
 	<div id="join"></div>
 
+	<h3>Popping & Pushing</h3>
+	<p>Remove elements in array by <strong>popping</strong> them out.</p>
+	<p>Starting Array: ["Bannana", "Orange", "Apple", "Mango"] </p>
+	<h4>Popping</h4>
+	<p>The <strong>pop( )</strong> method removes the last element from an array:</p>
+	<div id="popout"></div>
+	<p>Add elements into array by <strong>pushing</strong> them in.</p>
+
 	<script>
 		
 		// Converting Arrays to Strings
@@ -25,6 +33,11 @@
 		// join() Method
 		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
 		document.getElementById("join").innerHTML = fruits.join(" * "); 
+
+		// Popping - pop() Method
+		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
+		fruits.pop();   // removes last element ("Mango") from fruits
+		document.getElementById("popout").innerHTML = fruits; 
 
 
 	</script>
