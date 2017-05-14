@@ -17,12 +17,15 @@
 	<div id="join"></div>
 
 	<h3>Popping & Pushing</h3>
-	<p>Remove elements in array by <strong>popping</strong> them out.</p>
 	<p>Starting Array: ["Bannana", "Orange", "Apple", "Mango"] </p>
 	<h4>Popping</h4>
+	<p>Remove elements in array by <strong>popping</strong> them out.</p>
 	<p>The <strong>pop( )</strong> method removes the last element from an array:</p>
 	<div id="popout"></div>
+	<h4>Pushing</h4>
 	<p>Add elements into array by <strong>pushing</strong> them in.</p>
+	<p>The <strong>push( )</strong> method adds a new element to an array (at the end): </p>
+	<div id="pushin"></div>
 
 	<script>
 		
@@ -38,6 +41,11 @@
 		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
 		fruits.pop();   // removes last element ("Mango") from fruits
 		document.getElementById("popout").innerHTML = fruits; 
+
+		// Push() method
+		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
+		fruits.push("Kiwi");    // Adds a new element ("Kiwi") to fruits
+		document.getElementById("pushin").innerHTML = fruits;
 
 
 	</script>
