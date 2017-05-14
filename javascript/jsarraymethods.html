@@ -95,6 +95,11 @@
 	<p>var misHijos = arr1.concat(arr2, arr3);     // Concatenates arr1 with arr2 and arr3 </p>
 	<div id="merging3"></div>
 
+	<h3>Example (Merging an Array with Values)</h3>
+	<p>var array1 = ["Cecilie", "Lone"];</p>
+	<p>var myBabies = arr1.concat(["Emil", "Tobias","Linus"]);  </p>
+	<div id="mergeagain"></div>
+
 
 	<script>
 		
@@ -174,6 +179,12 @@
 		var arr3 = ["Robin", "Mogran"];
 		var misHijos = arr1.concat(arr2, arr3); 
 		document.getElementById("merging3").innerHTML = misHijos;
+
+
+		// Using concat() method bt taking values as arguments:
+		var array1 = ["Sissy", "Lizzie"];
+		var myBabies = array1.concat(["Kittie", "Missie", "Lottie"]);
+		document.getElementById("mergeagain").innerHTML = myBabies;
 
 
 	</script>
