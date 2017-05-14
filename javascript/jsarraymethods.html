@@ -33,13 +33,19 @@
 	<p>Shifting is similar to popping but instead of working on the last element, it works on the first.</p>
 	<h3>The <strong>shift( )</strong> method removes the first element and "shifts"all other elements to a lower index.</h3>
 	<p>Starting array: fruits = ["Bannana", "Orange", "Apple", "Mango"];</p>
-	<p>Example fruits.shift( );  </p>
+	<p>fruits.shift( );  </p>
 	<div id="shifty"></div>
 	
 	<h3>unshift( ) method adds a new element to array (at begining), and "unshifts" older elements:</h3>
 	<p>Starting array: var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
 	<p>fruits.unshift("Lemon"); </p>
 	<div id="unshift"></div>
+
+	<h2>Changing Elements</h2>
+	<p>Array elements are accessed using their <strong>index number: </strong></p>
+	<p>Starting array: var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+	<p>fruits[0] = "Kiwi";</p>
+	<div id="changing"></div>
 
 
 	<script>
@@ -79,6 +85,10 @@
 		fruits.unshift("Lemon");
 		document.getElementById("unshift").innerHTML = fruits;
 
+		// Changing Elements using index number:
+		var fruits = ["Bannana", "Orange", "Apple", "Mango"]; 
+		fruits[0] = "Kiwi";
+		document.getElementById("changing").innerHTML = fruits;
 
 	</script>
 
