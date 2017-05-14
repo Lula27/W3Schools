@@ -59,10 +59,26 @@
 	<div id="del"></div>
 
 	<h2>Splicing an Array</h2>
-	<p>Use <strong>splice( )</strong> method to add new items to an array:</p>
+	<h3>Use <strong>splice( )</strong> method to add new items to an array:</h3>
 	<p>Starting Array: var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
-	<p>fruits.splice(2, 0, "Lemon", "Kiwi"); </p>
+	<p><strong>fruits.splice(2, 0, "Lemon", "Kiwi");</strong></p>
+	<ul>
+		<li>first parameter (2) defines the position where new elements should be added (spliced in</li>
+		<li>second parameter (0) defines how many elements should be removed</li>
+		<li>rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added</li>
+	</ul>
 	<div id="splice"></div>
+
+	<h3>Using splice( ) to Remove Elements</h3>
+	<p>Tweek parameters to use splice( ) to remove elements w/o leaving "holes" in array: </p>
+	<p>Starting array: var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+	<p><strong>fruits.splice(0, 1);  -removes first element of fruits</strong></p>
+	<ul>
+		<li>first parameter (0) defines the position where new elements should be added (spliced in)</li>
+		<li> second parameter (1) defines how many elements should be removed</li>
+		<li>omitted rest of parameters - won't add any new elements</li>
+	</ul>
+	<div id="rmsplice"></div>
 
 
 	<script>
@@ -122,6 +138,11 @@
 		var fruits; 
 		fruits.splice(2, 0, "Lemon", "Kiwi"); 
 		document.getElementById("splice").innerHTML = fruits;
+
+		// Remove element with splice
+		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
+		fruits.splice(0, 1);
+		document.getElementById("rmsplice").innerHTML = fruits;
 
 
 	</script>
