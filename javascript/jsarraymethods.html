@@ -16,16 +16,31 @@
 	<p>Example: <strong>.join(" * ");</strong></p>
 	<div id="join"></div>
 
-	<h3>Popping & Pushing</h3>
+	<h2>Popping & Pushing</h2>
 	<p>Starting Array: ["Bannana", "Orange", "Apple", "Mango"] </p>
-	<h4>Popping</h4>
+	<h3>Popping</h3>
 	<p>Remove elements in array by <strong>popping</strong> them out.</p>
 	<p>The <strong>pop( )</strong> method removes the last element from an array:</p>
 	<div id="popout"></div>
-	<h4>Pushing</h4>
+	<h3>Pushing</h3>
 	<p>Add elements into array by <strong>pushing</strong> them in.</p>
 	<p>The <strong>push( )</strong> method adds a new element to an array (at the end): </p>
 	<div id="pushin"></div>
+	<p>push( ) method also returns the new array length: </p>
+	<div id="pushin-two"></div>
+
+	<h2>Shifting Elements</h2>
+	<p>Shifting is similar to popping but instead of working on the last element, it works on the first.</p>
+	<h3>The <strong>shift( )</strong> method removes the first element and "shifts"all other elements to a lower index.</h3>
+	<p>Starting array: fruits = ["Bannana", "Orange", "Apple", "Mango"];</p>
+	<p>Example fruits.shift( );  </p>
+	<div id="shifty"></div>
+	
+	<h3>unshift( ) method adds a new element to array (at begining), and "unshifts" older elements:</h3>
+	<p>Starting array: var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+	<p>fruits.unshift("Lemon"); </p>
+	<div id="unshift"></div>
+
 
 	<script>
 		
@@ -44,8 +59,25 @@
 
 		// Push() method
 		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
-		fruits.push("Kiwi");    // Adds a new element ("Kiwi") to fruits
+		var x = fruits.push("Kiwi");    // Adds a new element ("Kiwi") to fruits
 		document.getElementById("pushin").innerHTML = fruits;
+
+		// push() method returns the new array length. 
+		// console.log(x); 
+		document.getElementById("pushin-two").innerHTML = x;
+
+
+		 // shift() method - removes first element from array
+		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
+		fruits.shift(); 
+		document.getElementById("shifty").innerHTML = fruits;
+
+		// shift() method - returns the string that was "shifted out":
+		
+		// unshift() method - adds new element to an array (at begining) & "unshifts" older elements:
+		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
+		fruits.unshift("Lemon");
+		document.getElementById("unshift").innerHTML = fruits;
 
 
 	</script>
