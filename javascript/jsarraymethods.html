@@ -80,6 +80,13 @@
 	</ul>
 	<div id="rmsplice"></div>
 
+	<h2>Merging (Concatenating) Arrays</h2>
+	<p>The <strong>concat( )</strong> method creates a new array by merging (concatenating) existing arrays:</p>
+	<p>var myGirls = ["Cecilie", "Lone"];</p>
+	<p>var myBoys = ["Emil", "Tobias","Linus"];</p>
+	<p>var myChildren = myGirls.concat(myBoys); </p>
+	<div id="merging"></div>
+
 
 	<script>
 		
@@ -143,6 +150,14 @@
 		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
 		fruits.splice(0, 1);
 		document.getElementById("rmsplice").innerHTML = fruits;
+
+
+		// Merging (Concatenating) Arrays
+		var myGirls = ["Cecilie", "Lone"];
+		var myBoys = ["Emil", "Tobias", "Linus"];
+		var myChildren = myGirls.concat(myBoys);
+		// console.log(myChildren);
+		document.getElementById("merging").innerHTML = myChildren;
 
 
 	</script>
