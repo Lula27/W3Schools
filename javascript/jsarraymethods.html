@@ -81,11 +81,19 @@
 	<div id="rmsplice"></div>
 
 	<h2>Merging (Concatenating) Arrays</h2>
-	<p>The <strong>concat( )</strong> method creates a new array by merging (concatenating) existing arrays:</p>
+	<p>The <strong>concat( )</strong> method creates a <strong>new array </strong> by merging (concatenating) existing arrays:</p>
+	<h3>Example 1 (Merging Two Arrays)</h3>
 	<p>var myGirls = ["Cecilie", "Lone"];</p>
 	<p>var myBoys = ["Emil", "Tobias","Linus"];</p>
 	<p>var myChildren = myGirls.concat(myBoys); </p>
-	<div id="merging"></div>
+	<div id="merging2"></div>
+
+	<h3>Example 1 (Merging Three Arrays)</h3>
+	<p>var arr1 = ["Cecilie", "Lone"];</p>
+	<p>var arr2 = ["Emil", "Tobias","Linus"];</p>
+	<p>var arr3 = ["Robin", "Morgan"];</p>
+	<p>var misHijos = arr1.concat(arr2, arr3);     // Concatenates arr1 with arr2 and arr3 </p>
+	<div id="merging3"></div>
 
 
 	<script>
@@ -152,12 +160,20 @@
 		document.getElementById("rmsplice").innerHTML = fruits;
 
 
-		// Merging (Concatenating) Arrays
+		// Merging (Concatenating) 2 Arrays
 		var myGirls = ["Cecilie", "Lone"];
 		var myBoys = ["Emil", "Tobias", "Linus"];
 		var myChildren = myGirls.concat(myBoys);
 		// console.log(myChildren);
-		document.getElementById("merging").innerHTML = myChildren;
+		document.getElementById("merging2").innerHTML = myChildren;
+
+
+		// Merging (Concatenating) 3 Arrays
+		var arr1 = ["Cecile", "Lone"];
+		var arr2 = ["Emil", "Tobias", "Linus"];
+		var arr3 = ["Robin", "Mogran"];
+		var misHijos = arr1.concat(arr2, arr3); 
+		document.getElementById("merging3").innerHTML = misHijos;
 
 
 	</script>
