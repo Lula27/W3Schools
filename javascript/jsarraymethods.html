@@ -58,6 +58,12 @@
 	<p>delete fruits[0]; </p>
 	<div id="del"></div>
 
+	<h2>Splicing an Array</h2>
+	<p>Use <strong>splice( )</strong> method to add new items to an array:</p>
+	<p>Starting Array: var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+	<p>fruits.splice(2, 0, "Lemon", "Kiwi"); </p>
+	<div id="splice"></div>
+
 
 	<script>
 		
@@ -110,6 +116,12 @@
 		var fruits;
 		delete fruits[0]; 
 		document.getElementById("del").innerHTML = fruits;
+
+
+		// Splicing an Array
+		var fruits; 
+		fruits.splice(2, 0, "Lemon", "Kiwi"); 
+		document.getElementById("splice").innerHTML = fruits;
 
 
 	</script>
