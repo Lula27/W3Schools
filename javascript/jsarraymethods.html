@@ -52,6 +52,12 @@
 	<p>fruits[fruits.lenght] = "Kiwi";</p>
 	<div id="lengthadd"></div>
 
+	<h2>Deleting Elements</h2>
+	<p>Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator <strong>delete:</strong></p>
+	<p>Staring array: var fruits = ["Banana", "Orange", "Apple", "Mango"]; </p>
+	<p>delete fruits[0]; </p>
+	<div id="del"></div>
+
 
 	<script>
 		
@@ -99,6 +105,11 @@
 		var fruits = ["Banana", "Orange", "Apple", "Mango"];
 		fruits[fruits.length] = "Kiwi";
 		document.getElementById("lengthadd").innerHTML = fruits;
+
+		// Deleting an element using index.
+		var fruits;
+		delete fruits[0]; 
+		document.getElementById("del").innerHTML = fruits;
 
 
 	</script>
