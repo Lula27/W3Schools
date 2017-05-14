@@ -42,10 +42,15 @@
 	<div id="unshift"></div>
 
 	<h2>Changing Elements</h2>
-	<p>Array elements are accessed using their <strong>index number: </strong></p>
+	<h3>Array elements are accessed using their <strong>index number: </strong></h3>
 	<p>Starting array: var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
 	<p>fruits[0] = "Kiwi";</p>
 	<div id="changing"></div>
+	<h3>Length Property</h3>
+	<p>Also, add element by using the length property: </p>
+	<p>Staring array: fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+	<p>fruits[fruits.lenght] = "Kiwi";</p>
+	<div id="lengthadd"></div>
 
 
 	<script>
@@ -89,6 +94,12 @@
 		var fruits = ["Bannana", "Orange", "Apple", "Mango"]; 
 		fruits[0] = "Kiwi";
 		document.getElementById("changing").innerHTML = fruits;
+
+		// The length property provides an easy way to append a new element to an array:
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits[fruits.length] = "Kiwi";
+		document.getElementById("lengthadd").innerHTML = fruits;
+
 
 	</script>
 
