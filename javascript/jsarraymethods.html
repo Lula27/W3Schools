@@ -7,15 +7,24 @@
 	<h1>JavaScript Array Methods</h1>
 	<p>The strength of JavaScript lies in the array methods.</p>
 	<h2>Converting Arrays to Strings</h2>
-	<p>The JavaScript method <strong>toString( )</strong> converts an array to a string of (comma separated) array values.</p>
+	<h3>The JavaScript method toString( ) converts an array to a string of (comma separated) array values.</h3>
 	<p>Example: <strong>fruits.toString();</strong> </p>
 	<div id="tostr"></div>
+
+	<h3>The join( ) method also joins all array elements into a string.</h3>
+	<p>Similar to toString( ), but you can also specify and separator: </p>
+	<p>Example: <strong>.join(" * ");</strong></p>
+	<div id="join"></div>
 
 	<script>
 		
 		// Converting Arrays to Strings
 		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
 		document.getElementById("tostr").innerHTML = fruits.toString(); 
+
+		// join() Method
+		var fruits = ["Bannana", "Orange", "Apple", "Mango"];
+		document.getElementById("join").innerHTML = fruits.join(" * "); 
 
 
 	</script>
