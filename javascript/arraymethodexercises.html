@@ -10,7 +10,7 @@
 	<div id="ex1"></div>
 
 	<h3>Exercise 2: Use the push() method to add a new item to fruits: Kiwi.</h3>
-	<div id="push"></div>
+	<div id="ex2"></div>
 
 	<h3>Exercise 3: Use the splice() method to remove "Orange" and "Apple" from fruits.</h3>
 	<div id="ex3"></div>
@@ -25,14 +25,16 @@
 		// Exercise 2: push Kiwi
 		var fruits = ["Banana", "Orange", "Apple"];
 		fruits.push("Kiwi"); 
-		document.getElementById("push").innerHTML = fruits;
+		document.getElementById("ex2").innerHTML = fruits;
 
 
 		// Exercise 3: splice
-		var fruits;
+		var fruits = ["Banana", "Orange", "Apple"];
 		// console.log(fruits);
-		var fruta = fruits.splice(1, 0);
-		document.getElementById("ex3").innerHTML = fruta;
+		document.getElementById("ex3").innerHTML = fruits.splice(0, 1);
+
+
+		
 
 	</script>
 
