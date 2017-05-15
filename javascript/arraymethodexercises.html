@@ -6,7 +6,8 @@
 <body>
 	<h1>JavaScript Array Methods</h1>
 	<h3>Exercise 1: Use the pop() method to remove the last item from the fruits array.</h3>
-	<div id="pop"></div>
+	<p>var fruits = ["Banana", "Orange", "Apple"];</p>
+	<div id="ex1"></div>
 
 	<h3>Exercise 2: Use the push() method to add a new item to fruits: Kiwi.</h3>
 	<div id="push"></div>
@@ -18,8 +19,8 @@
 
 		// Exercise 1
 		var fruits = ["Banana", "Orange", "Apple"];
-		fruits.pop();
-		document.getElementById("pop").innerHTML = fruits.pop();  // Hmmm...didn't quite work as I thought it would
+		fruits.pop(2);
+		document.getElementById("ex1").innerHTML = fruits;
 		
 		// Exercise 2: push Kiwi
 		var fruits = ["Banana", "Orange", "Apple"];
