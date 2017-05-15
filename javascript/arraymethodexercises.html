@@ -15,6 +15,9 @@
 	<h3>Exercise 3: Use the splice() method to remove "Orange" and "Apple" from fruits.</h3>
 	<div id="ex3"></div>
 
+	<h4>Exercise 4: Use the concat() method to concatenate girls and boys.</h4>
+	<div id="ex4"></div>
+
 	<script>
 
 		// Exercise 1
@@ -33,7 +36,12 @@
 		// console.log(fruits);
 		document.getElementById("ex3").innerHTML = fruits.splice(0, 1);
 
+		// Exercise 4: concat method
+		var girls = ["Cecile", "Lone"];
+		var boys = ["Emil", "Tobias", "Linus"];
+		var children = girls.concat(boys);
 
+		document.getElementById("ex4").innerHTML = children;
 		
 
 	</script>
