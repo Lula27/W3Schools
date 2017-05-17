@@ -10,12 +10,26 @@
 	<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
 	<div id="sorthat"></div>
 
+	<h2>Reversing an Array</h2>
+	<p>The <strong>reverse( )</strong> method reverses the elements in an array.</p>
+	<p>May be used to sort array in decending order:</p>
+	<div id="rev"></div>
+
 
 	<script>
 		
+		// sort()
 		var fruits = ["Banana", "Orange", "Apple", "Mango"];
 		fruits.sort();
 		document.getElementById("sorthat").innerHTML = fruits;
+
+
+		// reverse()
+		var fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fruits.sort();
+		fruits.reverse(); 
+		document.getElementById("rev").innerHTML = fruits; 
+
 	</script>
 
 </body>
