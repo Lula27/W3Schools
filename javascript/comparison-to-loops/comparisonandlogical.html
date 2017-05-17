@@ -13,6 +13,7 @@
 	<p>Conditional operator that assigns a value to a variable based on some condition.</p>
 	<p>Syntax:</p>
 	<p>variablename = (condition) ? value1:value2 </p>
+	<p>var voteable = (age < 18) ? "Too young":"Old enough";</p>
 	
 	<img src="types.jpg">
 
@@ -66,6 +67,14 @@
 
 	// Exercise 4
 	document.getElementById("ex4").innerHTML = 10 != 8;
+
+
+	// Exercise 5
+	function checkAge() {
+		var age = document.getElementById("age").value;
+		var voteable = (age < 18) ? "Too young": "Old enough"; // add code here
+		document.getElementById("ex5").innerHTML = voteable + " to vote."; 
+	}
 
 	</script>
 
