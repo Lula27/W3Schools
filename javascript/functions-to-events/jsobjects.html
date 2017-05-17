@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects</title>
+</head>
+<body>
+	<h1>JavaScript Objects</h1>
+	<p>Te recuerdas que...variables are containers for data values. Well, objects are also variables. But objects can contain many values.</p>
+	<p><strong>JavaScript objects are containers for named values called properties and/or methods.</strong></p>
+	<p>Example: </p>
+	<div id="objectex"></div>
+
+	<h2>Object Properties</h2>
+	<p>The name:value pairs (in JS objects) are called <strong>properties</strong>.</p>
+	<img src="file:///C:/Users/loret/Desktop/Coding/W3Schools/javascript/images/objectproperties.jpg">
+	
+	<h3>Accessing Object Properties</h3>
+	<p>How? Two ways...</p>
+	<p>A. &emsp; objectName.propertyName</p>
+	<p>B. &emsp; objectName["propertyName]</p>
+	<br>
+	<p>Examples</p>
+	<div id="access"></div>
+	<div id="access2"></div>
+
+	<h2>Object Methods</h2>
+	<p>A Method is a function inside an object.</p>
+	<p>Methods are <strong>actions</strong> that can be performed on objects.</p>
+	<p>Example...function() {return this.firstName + " " + this.lastName;}</p>
+
+	<h3>Accessing Object Methods</h3>
+	<p>How? ... Use the following syntax: </p>
+	<p><strong>objectName.methodName()</strong></p>
+	<p>Example</p>
+	<div id="accessmethod"></div>
+	<div id="accessmethod2"></div>
+	<div id="accessmethod3"></div>
+	<div id="accessmethod4"></div>
+
+	<script>
+		
+		// Create variable called car which is an object that containes many values. Values assigned to car variable.
+
+		var car = {type: "Fiat", model: "500", color: "white"}; 
+
+		var statement = "Ok so for some reason, when you print the variable car, you get this... " + car + "." + " Just look in your console for a closer look!"
+
+		document.getElementById("objectex").innerHTML = statement; 
+
+		var accessProperty = car.type; 
+
+
+		// Accessing Object Property 
+		// var accessColor = car[color]; ...won't work for some reason. Says uncaught ReferenceError: color is not defined. 
+
+		var accessColor = car.color; 
+
+		document.getElementById("access").innerHTML = accessProperty; 
+
+		document.getElementById("access2").innerHTML = accessColor; 
+
+		// Accessing Object Method
+		// declare variable hotel and store properties in object
+
+		var hotel = {
+			name: "Quay",
+			rooms: 40,
+			booked: 25, 
+			gym: true,
+			roomTypes: ["twin", "double", "suite"],
+			checkAvailibility: function() {
+				return this.rooms - this.booked; 
+			}
+		}; 
+
+		// since the method is contained inside the object like Russian dolls, have to call object before approaching method 
+
+		document.getElementById("accessmethod").innerHTML = hotel.checkAvailibility; 
+
+
+		// Can also just contain it in a variable 
+			var method = hotel.checkAvailibility; 
+
+		document.getElementById("accessmethod2").innerHTML = method; 
+
+		document.getElementById("accessmethod3").innerHTML = hotel.checkAvailibility(); 
+
+		// contain method in variable
+		var myMethod2 = hotel.checkAvailibility(); 
+
+		document.getElementById("accessmethod4").innerHTML = myMethod2; 
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS in Body</title>
+</head>
+<body>
+
+<h1>A Web Page</h1>
+<p id="demo">Un párrafo</p>
+<button type="button" onclick="myFunction()">Try it!</button>
+
+<script>
+// My mistake: didn't introduce Mr. Function to computer so now computer thinks it's a stranger and doesn't recognize him. :/ 
+	// myFunction() = document.getElementById("demo").innerHTML = "For you, a love song. From your potential poet"; 
+
+
+	// Correct way...introduce verb than name it
+	function myFunction() {
+		document.getElementById("demo").innerHTML = "Para ti, una cancion de amor. De tu poeta en potencial."; 
+	}
+</script>
+
+
+
+</body>
+</html>
