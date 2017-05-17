@@ -41,6 +41,11 @@
 
 	<p id="demo"></p>
 
+	<h2>Sorting an Array in Random Order</h2>
+	<p>var points = [40, 100, 1, 5, 25, 10];</p>
+	<p><strong>points.sort(function(a, b){return 0.5 - Math.random()});</strong></p>
+	<div id="rando"></div>
+
 
 	<script>
 		
@@ -90,6 +95,11 @@
 		 	document.getElementById("demo").innerHTML = myPoints;
 		 }
 
+
+		// Sorting an Array in Random Order
+		var someNumbers = [40, 60, 100, 4, 7, 11];
+		someNumbers.sort(function(a, b){return 0.5 - Math.random()});
+		document.getElementById("rando").innerHTML = someNumbers;
 
 	</script>
 
