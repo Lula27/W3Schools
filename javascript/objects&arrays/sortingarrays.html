@@ -46,6 +46,17 @@
 	<p><strong>points.sort(function(a, b){return 0.5 - Math.random()});</strong></p>
 	<div id="rando"></div>
 
+	<h2>Finding the Highest & Lowest Values</h2>
+	<p>var numeros = [40, 100, 1, 5, 25, 10];</p>
+	<p>A. Highest</p>
+	<p><strong>points.sort(function(a, b){return b - a});</strong></p>
+	<p>document.getElementById("hi").innerHTML = numeros[0];</p>
+	<div id="hi"></div>
+
+	<p>B. Lowest</p>
+	<p><strong>points.sort(function(a, b){return a - b});</strong></p>
+	<p>document.getElementById("low").innerHTML = numeros[0];</p>
+	<div id="low"></div>
 
 	<script>
 		
@@ -100,6 +111,16 @@
 		var someNumbers = [40, 60, 100, 4, 7, 11];
 		someNumbers.sort(function(a, b){return 0.5 - Math.random()});
 		document.getElementById("rando").innerHTML = someNumbers;
+
+
+		// Finding the highest value
+		var numeros = [40, 100, 1, 5, 25, 10];
+		numeros.sort(function(a, b){return b - a});
+		document.getElementById("hi").innerHTML = numeros[0];
+
+		// lowest value
+		numeros.sort(function(a, b){return a - b});
+		document.getElementById("low").innerHTML = numeros[0]; 
 
 	</script>
 
