@@ -7,6 +7,7 @@
 	<h1>JavaScript Sorting Arrays</h1>
 	<h2>Sorting an Array</h2>
 	<p>The <strong>sort( )</strong> method sorts an array alphabetically:</p>
+	<p>By default, sorts values as <strong>strings</strong>.</p>
 	<p>var fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
 	<div id="sorthat"></div>
 
@@ -14,6 +15,13 @@
 	<p>The <strong>reverse( )</strong> method reverses the elements in an array.</p>
 	<p>May be used to sort array in decending order:</p>
 	<div id="rev"></div>
+
+	<h2>Numeric Sort</h2>
+	<p>Since sort works by default for strings, create a function to sort numeric values.</p>
+	<p>var points = [40, 100, 1, 5, 25, 10];</p>
+	<p><strong>Compare function:</strong></p>
+	<p><strong>points.sort(function(a, b){return a - b});</strong></p>
+	<div id="num"></div>
 
 
 	<script>
@@ -28,7 +36,15 @@
 		var fruits = ["Banana", "Orange", "Apple", "Mango"];
 		fruits.sort();
 		fruits.reverse(); 
-		document.getElementById("rev").innerHTML = fruits; 
+		document.getElementById("rev").innerHTML = fruits;
+
+		 // Numeric sort - compare function
+		 var points = [40, 100, 1, 5, 25, 10];
+
+		 // Compare function:
+		 points.sort(function(a,b){return a - b}); 
+
+		 document.getElementById("num").innerHTML = points;
 
 	</script>
 
