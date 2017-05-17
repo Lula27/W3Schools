@@ -18,16 +18,20 @@
 
 	<h2>Numeric Sort</h2>
 	<p>Since sort works by default for strings, create a function to sort numeric values.</p>
-	<p>var points = [40, 100, 1, 5, 25, 10];</p>
 	<p><strong>Compare function:</strong></p>
 	<p>A. Ascending Order</p>
+	<p>var points = [40, 100, 1, 5, 25, 10];</p>
 	<p><strong>points.sort(function(a, b){return a - b});</strong></p>
 	<div id="asc"></div>
+	<p>num = [-17, 0, 500, -77, 13, 5]</p>
+	<div id="asc2"></div>
 
 
 	<p>B. Descending Order</p>
 	<p><strong>points.sort(function(a, b){return b - a});</strong></p>
 	<div id="dec"></div>
+	<p>num = [-17, 0, 500, -77, 13, 5]</p>
+	<div id="dec2"></div>
 
 
 	<script>
@@ -48,9 +52,21 @@
 		 var points = [40, 100, 1, 5, 25, 10];
 
 		 // Compare function:
+		 // Ascending Order - 
 		 points.sort(function(a,b){return a - b}); 
 
 		 document.getElementById("asc").innerHTML = points;
+		 // Example 2
+		 num = [-17, 0, 500, -77, 13, 5];
+
+		 num.sort(function(a,b){return a - b});
+		 document.getElementById("asc2").innerHTML = num;
+
+		 // Descending Order - 
+		 points.sort(function(a,b){return b - a}); 
+		 document.getElementById("dec").innerHTML = points;
+		 num.sort(function(a,b){return b - a}); 
+		 document.getElementById("dec2").innerHTML = num; 
 
 	</script>
 
