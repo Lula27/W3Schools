@@ -33,6 +33,14 @@
 	<p>num = [-17, 0, 500, -77, 13, 5]</p>
 	<div id="dec2"></div>
 
+	<br>
+	
+	<h2>Experimential Practice</h2>
+	<button onclick="myFunction1()">Sort Alphabetically</button>
+	<button onclick="myFunction2()">Sort Numerically</button>
+
+	<p id="demo"></p>
+
 
 	<script>
 		
@@ -66,7 +74,17 @@
 		 points.sort(function(a,b){return b - a}); 
 		 document.getElementById("dec").innerHTML = points;
 		 num.sort(function(a,b){return b - a}); 
-		 document.getElementById("dec2").innerHTML = num; 
+		 document.getElementById("dec2").innerHTML = num;
+
+		 // EXPERIMENTIAL PRACTICE
+		 var myPoints = [26, 700, 1, 7, 25, 10];
+		 document.getElementById("demo").innerHTML = myPoints;
+
+		 function myFunction1() {
+		 	myPoints.sort();
+		 	document.getElementById("demo").innerHTML = myPoints;
+		 }
+
 
 	</script>
 
