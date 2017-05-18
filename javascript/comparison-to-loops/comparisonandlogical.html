@@ -54,7 +54,7 @@
 	If the variable firstName is equal to "John", the value of the variable result should be "Hello John!", 
 	otherwise the value of result should be "You're not John!".</h3>
 
-	First Name: <input type="text" id="fname" value="John">
+	First Name: <input type="text" id="fname" value="Abena">
 	<button onclick="checkName()">Check Name</button>
 	<p id="ex6"></p>
 
@@ -86,6 +86,12 @@
 
 
 	// Exercise 6: figure it out for ya self based off ex 5
+
+	function checkName() {
+		var name = document.getElementById("fname").value;
+		var myNameIs = (name == "Abena") ? "Hello Abena!": "You're not Abena!";
+		document.getElementById("ex6").innerHTML = myNameIs; 
+	}
 
 	</script>
 
