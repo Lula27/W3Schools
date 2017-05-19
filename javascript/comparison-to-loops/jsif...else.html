@@ -16,5 +16,29 @@
 		<li><strong>switch</strong>- specify many alternative blocks of code to be executed</li>
 	</ul>
 
+	<h2>The if Statement</h2>
+	<p>Use the <strong>if</strong> statement to specify a block of JS code to be executed if a condition is <strong>true</strong>.</p>
+	<p>All code in brackets!</p>
+	<p><strong>if</strong> (condition) {  <br>
+		&nbsp block of code to be executed if the condition is true <br>
+		}
+	</p>
+	<p>Example: Make a "Good day" greeting if the hour is less than 18:00:</p>
+	<div id="if"></div>
+
+
+	<script>
+		var hour = 10; 
+		
+		// if Statement
+		if (hour < 18) { // All code MUST be within brackets! 
+			greeting = "Good day!"; 
+			document.getElementById("if").innerHTML = greeting;
+		}
+
+		 
+
+	</script>
+
 </body>
 </html>
