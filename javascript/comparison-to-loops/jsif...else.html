@@ -35,6 +35,14 @@
 
 	<div id="else1"></div>
 
+	<h2>The else if Statement</h2>
+	<p>Use the <strong>else if</strong> statement to specify a new condition if the first condition is false.</p>
+	<img src="elseif.jpg">
+
+	<button onclick="myFunction2()">Another One!</button>
+
+	<p id="ifelse"></p>
+
 
 	<script>
 		var hour = 10; 
@@ -80,6 +88,20 @@
 			document.getElementById("else1").innerHTML = greeting;	
 		}
 
+
+		// ifelse statement example
+		function myFunction2() {
+			var greeting;
+			var time = new Date().getHours();
+			if (time < 10) {
+				greeting = "Good morning";
+			} else if (time < 20) {
+				greeting = "Good day";
+			} else {
+				greeting = "Good evening"; 
+			}
+		document.getElementById("ifelse").innerHTML = greeting; 	
+		}
 
 
 		 
