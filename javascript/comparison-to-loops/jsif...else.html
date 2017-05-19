@@ -30,6 +30,11 @@
 	<p>Use the <strong>else</strong> statement to specify a block of code to be executed if the condition is <strong>false</strong>.</p>
 	<img src="else.jpg">
 
+	<p>Example: If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":</p>
+	<button onclick="myFunction()">My Greetings!</button>
+
+	<div id="else1"></div>
+
 
 	<script>
 		var hour = 10; 
@@ -60,6 +65,22 @@
 
 			document.getElementById("if3").innerHTML = statement;
 		}
+
+
+		// if...else statement examples
+
+		function myFunction() {
+			var hour = new Date().getHours();
+				var greeting;
+				if (hour < 18) {
+					greeting = "Good day!";
+				} else {
+					greeting = "Good evening.";
+				}
+			document.getElementById("else1").innerHTML = greeting;	
+		}
+
+
 
 		 
 
