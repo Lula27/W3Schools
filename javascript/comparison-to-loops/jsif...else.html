@@ -25,6 +25,8 @@
 	</p>
 	<p>Example: Make a "Good day" greeting if the hour is less than 18:00:</p>
 	<div id="if"></div>
+	<div id="if2"></div>
+	<div id="if3"></div>
 
 
 	<script>
@@ -34,6 +36,16 @@
 		if (hour < 18) { // All code MUST be within brackets! 
 			greeting = "Good day!"; 
 			document.getElementById("if").innerHTML = greeting;
+		}
+
+
+		// Congratulate for a wedding!
+		var single = 0;
+		var married = 1; 
+
+		if (married = 0) {
+			greeting = "Cheers to the newly weds!"; 
+			document.getElementById("if2").innerHTML = greeting;
 		}
 
 		 
