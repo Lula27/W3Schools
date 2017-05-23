@@ -24,6 +24,7 @@
 
 	<h2>Exercise 6: The if/else statement does not work. Try to fix it!</h2>
 	<img src="exercise6.jpg">
+	<div id="ex6"></div>
 
 
 	<script>
@@ -73,6 +74,18 @@
 		document.getElementById("ex5").innerHTML = "Too young";
 	}
 
+
+	// Exercise 6
+
+	var greeting; 
+	var hour = new Date().getHours();
+
+	// console.log(hour);
+	if (hour < 18) {
+		greeting = "Good day";
+	} else {
+		greeting = "Good evening";
+	}
 
 	</script>
 
