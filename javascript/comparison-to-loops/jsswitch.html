@@ -26,6 +26,10 @@
 	<div id="ex2"></div>
 	<div id="ex3"></div>
 
+	<h2>Common Code Blocks</h2>
+	<p>Different switch cases using the same code.</p>
+	<div id="ex4"></div>
+
 
 	<script>
 		
@@ -81,6 +85,22 @@
 				texting = "Today is Sunday";
 		}
 		document.getElementById("ex3").innerHTML = texting;
+
+
+		// Common Code Blocks
+		switch (new Date().getDay()) {
+			case 4:
+			case 5:
+				text = "Soon it is Weekend";
+				break;
+			case 0:
+			case 6:
+				text = "It is Weekend";
+				break;
+			default:
+				text = "Looking forward to the Weekend";
+		}
+		document.getElementById("ex4").innerHTML = text; 
 
 	</script>
 
