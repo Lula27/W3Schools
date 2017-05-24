@@ -19,6 +19,10 @@
 	<img src="swexample.jpg">
 	<div id="ex1"></div>
 
+	<h2>The default Keyword</h2>
+	<p>The <strong>default</strong> keyword specifies the code to run if there is no case match:</p>
+	<div id="ex2"></div>
+
 	<script>
 		
 		// Example 1 - switch statement
@@ -46,6 +50,19 @@
 		}
 
 		document.getElementById("ex1").innerHTML = day; 
+
+		// Example 2
+		switch (new Date().getDay()) {
+			case 6: 
+				text = "Today is Saturday";
+				break;
+			case 0:
+				text = "Today is Sunday";
+				break;
+			default:
+				text = "Looking forward to the weekend!";
+		}
+		document.getElementById("ex2").innerHTML = text; 
 
 	</script>
 
