@@ -5,36 +5,71 @@
 </head>
 <body>
 	<h1>JS Switch Statement Exercises</h1>
+
+	<h2>Exercise 1</h2>
 	<p>The switch statement is missing a case for "Apple". Add it, and set text to "How you like them apples?"</p>
 
 	<input id="myInput" type="text" value="apple">
 	<button onclick="checkFruit()">Check Fruit</button>
 	<p id="ex1"></p>
 
+	<h2>Exercise 2</h2>
+	<p>The switch statment is missing a <strong>default</strong> case.</p>
+	<p>Add it to the bottom of the switch statement, and set text to "I have never heard of that fruit".</p>
+	<input id="myInput2" type="text" value="Tutti Fruitti">
+	<button onclick="checkFruit()">Check Fruit</button>
+	<p id="ex2"></p>
+
 	<script>
 		
 		// Exercise 1
+		// function checkFruit() {
+		// 	var text; 
+		// 	var fruits = 
+		// document.getElementById("myInput").value; 
+		
+		// // create switch statment
+		// switch(fruits) {
+		// 	case "Banana":
+		// 		text = "Banana is good!";
+		// 		break;
+		// 	case "Orange":
+		// 		text = "I am not a fan of orange.";
+		// 		break;
+		// 	case "Apple":
+		// 		text = "How you like them apples?";
+		// 		break;
+		// 	default:
+		// 		text = "I have never heard of that fruit.";
+		// 	}
+		// }
+
+		// document.getElementById("ex1").innerHTML = text; 
+
+
+		// Exercise 2
 		function checkFruit() {
-			var text; 
+			var text;
 			var fruits = 
-		document.getElementById("myInput").value; 
+		document.getElementById("myInput2").value;
+
+			switch(fruits) {
+				case "Banana":
+					text = "Banana is good!";
+					break;
+				case "Orange":
+					text = "I am not a fan of orange.";
+					break;
+				case "Apple":
+					text = "How you like them apples?";
+					break;
+				default: 
+					text = "I have never heard of that fruit.";
+			}
+			document.getElementById("ex2").innerHTML = text; 
 		}
 
-		// create switch statment
-		switch(fruits) {
-			case "Banana":
-				text = "Banana is good!";
-				break;
-			case "Orange":
-				text = "I am not a fan of orange.";
-				break;
-			case "Apple":
-				text = "How you like them apples?";
-				break;
-			default:
-				text = "I have never heard of that fruit.";
-		}
-		document.getElementById("ex1").innerHTML = text; 
+		// cool! It works. Appears to be case sensitive...
 
 
 	</script>
