@@ -7,9 +7,37 @@
 	<h1>JS Switch Statement Exercises</h1>
 	<p>The switch statement is missing a case for "Apple". Add it, and set text to "How you like them apples?"</p>
 
-	<input id="myInput" type="text" value="Apple">
+	<input id="myInput" type="text" value="apple">
 	<button onclick="checkFruit()">Check Fruit</button>
-	<p id="demo"></p>
+	<p id="ex1"></p>
+
+	<script>
+		
+		// Exercise 1
+		function checkFruit() {
+			var text; 
+			var fruits = 
+		document.getElementById("myInput").value; 
+		}
+
+		// create switch statment
+		switch(fruits) {
+			case "Banana":
+				text = "Banana is good!";
+				break;
+			case "Orange":
+				text = "I am not a fan of orange.";
+				break;
+			case "Apple":
+				text = "How you like them apples?";
+				break;
+			default:
+				text = "I have never heard of that fruit.";
+		}
+		document.getElementById("ex1").innerHTML = text; 
+
+
+	</script>
 
 </body>
 </html>
