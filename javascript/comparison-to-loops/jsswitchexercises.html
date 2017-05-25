@@ -9,7 +9,7 @@
 	<h2>Exercise 1</h2>
 	<p>The switch statement is missing a case for "Apple". Add it, and set text to "How you like them apples?"</p>
 
-	<input id="myInput" type="text" value="apple">
+	<input id="myInput" type="text" value="Apple">
 	<button onclick="checkFruit()">Check Fruit</button>
 	<p id="ex1"></p>
 
@@ -23,28 +23,26 @@
 	<script>
 		
 		// Exercise 1
-		// function checkFruit() {
-		// 	var text; 
-		// 	var fruits = 
-		// document.getElementById("myInput").value; 
-		
-		// // create switch statment
-		// switch(fruits) {
-		// 	case "Banana":
-		// 		text = "Banana is good!";
-		// 		break;
-		// 	case "Orange":
-		// 		text = "I am not a fan of orange.";
-		// 		break;
-		// 	case "Apple":
-		// 		text = "How you like them apples?";
-		// 		break;
-		// 	default:
-		// 		text = "I have never heard of that fruit.";
-		// 	}
-		// }
+		function checkFruit() {
+			var text;
+			var fruits = 
+		document.getElementById("ex1").value;
 
-		// document.getElementById("ex1").innerHTML = text; 
+			switch(fruits) {
+				case "Pear":
+					text1 = "Pear, que rico!";
+					break;
+				case "Mamay":
+					text1 = "I am not a fan of orange.";
+					break;
+				case "Manzana":
+					text1 = "How you like them apples?";
+				default:
+					text1 = "I have never heard of that fruit."; 
+			}
+		document.getElementById("ex1").innerHTML = text1; 
+
+		}
 
 
 		// Exercise 2
