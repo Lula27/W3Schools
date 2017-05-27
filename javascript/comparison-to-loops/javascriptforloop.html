@@ -11,17 +11,21 @@
 
 	<script>
 		
-		// Example of Code without ForLoop 
-		var text = cars[0] + "<br>";;
-
+	// Example of Code without ForLoop - Instead of this...
+		text = cars[0] + "<br>";
 		text += cars[1] + "<br>";
 		text += cars[2] + "<br>";
 		text += cars[3] + "<br>";
 		text += cars[4] + "<br>"; 
 		text += cars[5] + "<br>"; 
 
-		document.getElementById("pre-loop").innerHTML = text; 
+	
+	// Write this...
+	for (i = 0; i < cars.lenght; i++) {
+		text += cars[i] + "<br>";
+	}
 
+	document.getElementById("pre-loop").innerHTML = text; 
 
 
 	</script>
