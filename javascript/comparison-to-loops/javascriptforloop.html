@@ -20,6 +20,9 @@
 
 	<h2>The For Loop</h2>
 
+	<h2>Exercise 1: In the for loop, change num1 to 0 and num2 to 10 and run the code.</h2>
+	<div id="ex1"></div>
+
 	<script>
 		
 	// Example of Code without ForLoop - Instead of this...
@@ -38,11 +41,22 @@
 	for (i = 0; i < cars.length; i++) {
 		
 		var text = '';
-		
+
 		text += cars[i] + "<br>";
 	}
 
 	document.getElementById("pre-loop").innerHTML = text; 
+
+
+	// Exercise 1 
+	var i; 
+	for (i = 0; i < 10; i++) {
+		document.getElementById("ex1").innerHTML += i + "<br>";
+	}
+
+
+
+
 
 
 	</script>
