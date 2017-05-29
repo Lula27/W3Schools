@@ -18,19 +18,27 @@
 		<ol><strong>do/while-</strong> also loops through a block of code while a specified condition is true</ol>
 	</ul>
 
+	<h2>The For Loop</h2>
+
 	<script>
 		
 	// Example of Code without ForLoop - Instead of this...
-		text = cars[0] + "<br>";
-		text += cars[1] + "<br>";
-		text += cars[2] + "<br>";
-		text += cars[3] + "<br>";
-		text += cars[4] + "<br>"; 
-		text += cars[5] + "<br>"; 
+		// text = cars[0] + "<br>";
+		// text += cars[1] + "<br>";
+		// text += cars[2] + "<br>";
+		// text += cars[3] + "<br>";
+		// text += cars[4] + "<br>"; 
+		// text += cars[5] + "<br>"; 
 
-	
+
+	var cars = ["Toyota", "Honda", "Ford"];
+
+
 	// Write this...
-	for (i = 0; i < cars.lenght; i++) {
+	for (i = 0; i < cars.length; i++) {
+		
+		var text = '';
+		
 		text += cars[i] + "<br>";
 	}
 
