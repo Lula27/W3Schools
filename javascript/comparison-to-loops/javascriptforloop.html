@@ -29,6 +29,10 @@
 	<h2>Exercise 3: Make the loop start counting from 5. Count up to (including) 50, and count only every fifth number. </h2>
 	<div id="ex3"></div>
 
+	<h2>Exercise 4: Make the loop start counting downwards from 10 and stop at 1.</h2>
+	<p>The output should be 10 9 8 7 6 5 4 3 2 1 with line breaks.</p>
+	<div id="ex4"></div>
+
 	<script>
 		
 	// Example of Code without ForLoop - Instead of this...
@@ -68,13 +72,20 @@
 	}
 
 	// Exercise 3
-	var count;
 
 	// increment counter i++ is same as i+=1; to increase increment, just tweek that...
 
 	for (i = 5; i <= 50; i+=5 ) {
 		document.getElementById("ex3").innerHTML += i + "<br>"; 
 	} 
+
+
+	// Exercise 4
+	// var i; 
+	// This loop isn't working because you're saying that is will end at less than or equal to one; rather, you want i > 0 for the middle term
+	for (i = 10; i > 0; i--) {
+		document.getElementById("ex4").innerHTML += i + "<br>"; 
+	}
 
 
 
