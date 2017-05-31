@@ -33,6 +33,12 @@
 	<p>The output should be 10 9 8 7 6 5 4 3 2 1 with line breaks.</p>
 	<div id="ex4"></div>
 
+	<h2>Exercise 5: Inside the for loop: <br>
+	Set the counter variable (i) to 0. <br>
+	Run the loop as long as i is less than the length of the food array. <br>
+	Increment i by 1.</h2>
+	<div id="ex5"></div>
+
 	<script>
 		
 	// Example of Code without ForLoop - Instead of this...
@@ -88,6 +94,16 @@
 	}
 
 
+	// Exercise 4
+	var text = "";
+	var food = ["Pizza", "Beans", "Tacos", "Fish", "Chicken"];
+	var i;
+
+	for (i = 0; i < food.length; i++) {
+		text += "I love " + food[i] + "!" + "<br>";
+	}
+
+	document.getElementById("ex5").innerHTML = text; 
 
 	</script>
 
