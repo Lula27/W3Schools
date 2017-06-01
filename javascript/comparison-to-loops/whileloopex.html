@@ -10,6 +10,9 @@
 	<h2>Exercise 2: Make the loop start counting from 5 instead of 0.</h2>
 	<div id="ex2"></div>
 
+	<h2>Exercise 3: Make the loop start counting from 5. Count up to (including) 50 and count only every fifth number.</h2>
+	<div id="ex3"></div>
+
 	<script type="text/javascript">
 		
 		// Exercise 1
@@ -27,7 +30,12 @@
 					i++; 
 		}
 
-
+		// Exercise 3
+		var i = 5;
+		while (i <= 50) {
+			document.getElementById("ex3").innerHTML += i + "<br>"; 
+					i++;
+		}
 
 
 	</script>
