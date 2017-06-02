@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JavaScript While Loop Exercises</title>
+	<title>JavaScript Do While Loop Exercises</title>
 </head>
 <body>
 	<h2>Exercise 1: Inside the script element, change num1 to 0 and num2 to 10 and run the code.</h2>
@@ -16,6 +16,10 @@
 	<h2>Exercise 4: Make the loop start counting downwards from 10 and stop at 1. <br>
 	The output should be 10 9 8 7 6 5 4 3 2 1 with line breaks.</h2>
 	<div id="ex4"></div>
+
+	<h2>Exercise 5: The do/while loop should output 0
+	1 2 3 4. Try to fix it! </h2>
+	<div id="ex5"></div>
 
 	<script type="text/javascript">
 		
@@ -50,6 +54,15 @@
 				i--; 
 		}
 
+
+		// Exercise 5
+		var i = 0;
+		do {
+			document.getElementById("ex5").innerHTML += i +
+			"<br>";
+			i++;
+		}
+		while (i < 5)
 
 	</script>
 
