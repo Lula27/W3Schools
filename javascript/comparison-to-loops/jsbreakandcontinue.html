@@ -11,6 +11,9 @@
 	<h2>Exercise 2: Use the continue statement to skip the number 5 in the loop.</h2>
 	<div id="ex2"></div>
 
+	<h2>Exercise 3: Use the continue statement to skip the numbers 5 AND 7 in the loop.</h2>
+	<div id="ex3"></div>
+
 	<script>
 		// Exercise 1
 		var text = "";
@@ -30,7 +33,13 @@
 		}
 
 
-
+		// Exercise 3
+		var text = ""
+		var i;
+		for (i = 1; i < 10; i++) {
+			if (i === 5 || i === 7)  continue; 
+			document.getElementById("ex3").innerHTML += i + "<br>";
+		}
 
 
 
