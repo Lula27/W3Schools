@@ -21,6 +21,10 @@
 	1 2 3 4. Try to fix it! </h2>
 	<div id="ex5"></div>
 
+	<h2>An experiment: Do not forget to increase the variable used in the condition, otherwise the loop will never end!</h2>
+	<h2><strong>Lol! When you crash your code, the page just loads forever...</strong></h2>
+	<div id="experiment"></div>
+
 	<script type="text/javascript">
 		
 		// Exercise 1
@@ -63,6 +67,20 @@
 			i++;
 		}
 		while (i < 5)
+
+
+		// Exeriment...let's crash something cus evidently: "Do not forget to increase the variable used in the condition, otherwise the loop will never end!"
+		var i = 7;
+
+		var text = ""; 
+
+		do {
+			text += "The number is " + i + "<br>";
+			i++;
+			document.getElementById("experiment").innerHTML = text; 
+		}
+		while (i < 28);
+
 
 	</script>
 
