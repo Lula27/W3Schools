@@ -19,6 +19,9 @@
 	<button onclick="checkCar()">Check Car</button>
 	<div id="ex4"></div>
 
+	<h2>Exercise 5: Use the continue statement to not output the array's element "Saab".</h2>
+	<div id="ex5"></div>
+
 	<script>
 		// Exercise 1
 		var text = "";
@@ -68,7 +71,16 @@
 			document.getElementById("ex4").innerHTML = text;
 		}
 
-		checkCar();
+
+		// Exercise 5
+		var cars = ["BMW", "Volvo", "Saab", "Ford"];
+		var text = "";
+		var i; 
+		for (i = 0; i < cars.length; i++) {
+			if (cars[i] === "Saab") continue; 
+			text += cars[i] + "<br>";
+		}
+		document.getElementById("ex5").innerHTML = text; 
 
 	</script>
 
