@@ -40,6 +40,8 @@
 	<p>The <strong>constructor</strong> property returns the constructor function for all JS variables.</p>
 	<p>"John".constructor</p>
 	<div id="ex4"></div>
+	<p>[1,2,3,4].constructor</p>
+	<div id="ex5"></div>
 
 
 	<script type="text/javascript">
@@ -59,6 +61,9 @@
 		// constructor property
 		var c1 = "John".constructor;
 		document.getElementById("ex4").innerHTML = c1; 
+
+		var c2 = [1, 2, 3, 4].constructor;
+		document.getElementById("ex5").innerHTML = c2;
 
 	</script>
 
