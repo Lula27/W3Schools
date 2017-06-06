@@ -30,12 +30,18 @@
 	<p>Use <strong>typeof</strong> operator to find the data type of a JS variable</p>
 	<p>var name = typeof "John"</p>
 	<div id="ex1"></div>
+	<p>typeof NaN</p>
+	<div id="ex2"></div>
 
 
 	<script type="text/javascript">
 		
 		var name = typeof "John";
 		document.getElementById("ex1").innerHTML = name; 
+
+
+		var nonNumber = typeof NaN; 
+		document.getElementById("ex2").innerHTML = nonNumber;
 
 
 	</script>
