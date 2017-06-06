@@ -27,6 +27,7 @@
 		</ul>
 
 	<h3>The typeof Operator</h3>
+	<p>The typeof operator always <strong>returns a string</strong> (containing the type of the operand).</p>
 	<p>Use <strong>typeof</strong> operator to find the data type of a JS variable</p>
 	<p>var name = typeof "John"</p>
 	<div id="ex1"></div>
@@ -35,9 +36,15 @@
 	<p>typeof {name: 'John', age: 34}</p>
 	<div id="ex3"></div>
 
+	<h3>The constructor Property</h3>
+	<p>The <strong>constructor</strong> property returns the constructor function for all JS variables.</p>
+	<p>"John".constructor</p>
+	<div id="ex4"></div>
+
 
 	<script type="text/javascript">
 		
+		// typeof Examples
 		var name = typeof "John";
 		document.getElementById("ex1").innerHTML = name; 
 
@@ -47,6 +54,11 @@
 
 		var obj = typeof {name: 'John', age: 34}
 		document.getElementById("ex3").innerHTML = obj;
+
+
+		// constructor property
+		var c1 = "John".constructor;
+		document.getElementById("ex4").innerHTML = c1; 
 
 	</script>
 
