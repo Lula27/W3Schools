@@ -44,6 +44,11 @@
 	<div id="ex5"></div>
 	<p>new Date().constructor</p>
 	<div id="ex6"></div>
+	<p>Check constructor property to find out if an object is an Array (contains the word "Array"): </p>
+	<p><strong>function isArray(myArray) {  <br>
+    return myArray.constructor.toString().indexOf("Array") > -1;
+	}</strong></p>
+	<div id="check"></div>
 
 
 	<script type="text/javascript">
@@ -69,6 +74,13 @@
 
 		var c3 = Date().constructor;
 		document.getElementById("ex6").innerHTML = c3;
+
+
+		// Check constructor property
+		function isArray(myArray) {
+			return myArray.constructor.toString().indexOf("Array") > -1; 
+			document.getElementById("check").innerHTML = isArray(); 
+		}
 
 	</script>
 
