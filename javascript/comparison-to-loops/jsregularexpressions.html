@@ -54,6 +54,15 @@
 	<div id="test1"></div>
 	<div id="test2"></div>
 
+	<h2>Using exec( )</h2>
+	<p>exc( ) method = RegExp expression method</p>
+	<p>Searches string for a specified pattern, and returns the found text. If no match is found, it returns null.</p>
+	<p>Example: find e again!</p>
+	<p>/e/.exec("The best things in life are free!");</p>
+	<div id="exec1"></div>
+	<p>Example two works but it appears nothing pops up...also, appears that this is case sensitive!</p>
+	<div id="exec2"></div>
+
 
 	
 
@@ -94,6 +103,19 @@
 		document.getElementById("test1").innerHTML =  test1; 
 
 		document.getElementById("test2").innerHTML = test2;
+
+
+		// Using exec() Method
+		var ex = /e/.exec("The best things in life are free!");
+
+		document.getElementById("exec1").innerHTML = ex; 
+
+		
+		// will return null
+
+		var ex2 = /e/.exec("Look kid!");
+
+		document.getElementById("exec2").innerHTML = ex2; 
 
 
 	</script>
