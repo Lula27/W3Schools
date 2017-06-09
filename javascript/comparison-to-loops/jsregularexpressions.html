@@ -19,23 +19,32 @@
 	<h2>Using String Methods</h2>
 	<p>In JavaScript, regular expressions are often used with the two <strong>string methods:</strong> search( ) and replace( ).</p>
 	<ul>
-		<li><strong>search( ) method</strong>- uses an expression to search for a match, and returns the position of the match.</li>
+		<p><strong>A. search( ) method</strong>- uses an expression to search for a match, and returns the position of the match.</p>
 		<h2>Using String search() With a Regular Expression</h2>
 		<p>var n = str.search(/w3schools/i);</p>
 		<div id="searchex"></div>
-		<li><strong>replace( ) method</strong>- returns a modified string where the pattern is replaced.</li>
+		<h2>Using String search( ) with String</h2>
+		<p>var n = str.search("W3Schools");</p>
+		<div id="searchstr"></div>
+		<p><strong>B. replace( ) method</strong>- returns a modified string where the pattern is replaced.</p>
 	</ul>
 
 
 	<script>
 		
-		// Search Example
+		// Search Example - regular expression
 		var str = "Visit W3schools";
 		var n = str.search(/schools/i); 
 
 		document.getElementById("searchex").innerHTML = n; 
 
 
+
+		// Using String search() w/ string
+		var str2 = "Visit W3Schools";
+		var n2 = str2.search("W3Schools"); 
+
+		document.getElementById("searchstr").innerHTML = n2; 
 
 
 
