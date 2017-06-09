@@ -9,13 +9,21 @@
 		<li>A regular expression is a sequence of characters that forms a <strong>search pattern</strong>.</li>
 		<li>Can be a single character, or a complicated pattern.</li>
 		<li>Can be used to perform all types of <strong>text search</strong> and <strong>text replace</strong> operations</li>
+		<p>Regular expressions can make your search more powerful (case insensitive for example)...</p>
 	</ul>
+
 	<h2>Syntax</h2>
 	<h3>/pattern/<i>modifiers</i>;</h3>
 
 	<h2>Example</h2>
 	<h3>var patt = /w3schools/i;</h3>
 
+
+	<img src="regular1.jpg">
+
+	<img src="regular2.jpg">
+
+		<!-- Search & Replace Using Regular & Replace -->
 	<h2>Using String Methods</h2>
 	<p>In JavaScript, regular expressions are often used with the two <strong>string methods:</strong> search( ) and replace( ).</p>
 	<ul>
@@ -37,6 +45,17 @@
 		<div id="strrep2"></div>
 	</ul>
 
+	<h2>Using test() Method</h2>
+	<p>test( ) method = RegExp expression method</p>
+	<p>Searches string for a pattern and returns true or false, depending on the result.</p>
+	<p>The following example searches a string for the character "e":</p>
+	<p>var patt = /e/;</p>
+	<p>patt.test("The best things in life are free!");</p>
+	<div id="test1"></div>
+	<div id="test2"></div>
+
+
+	
 
 	<script>
 		
@@ -64,6 +83,18 @@
 		var res = str.replace("Microsoft", "W3Schools");
 
 		document.getElementById("strrep2").innerHTML = res; 
+
+
+		// test() Method - results in true/false if it finds what you're looking for
+		var patt = /e/;
+		var test1 = patt.test("The best things in life are free!");
+
+		var test2 = patt.test("Look kid!")
+
+		document.getElementById("test1").innerHTML =  test1; 
+
+		document.getElementById("test2").innerHTML = test2;
+
 
 	</script>
 
