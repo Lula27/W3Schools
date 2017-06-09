@@ -27,6 +27,14 @@
 		<p>var n = str.search("W3Schools");</p>
 		<div id="searchstr"></div>
 		<p><strong>B. replace( ) method</strong>- returns a modified string where the pattern is replaced.</p>
+		<h2>String replace() with a Regular Expression</h2>
+		<p>var str = "Visit Microsoft!";</p>
+		<p>var res = str.replace(/microsoft/i, "W3Schools");</p>
+		<div id="strrep"></div>
+		<h2>Using String replace() With a String</h2>
+		<p>var str = "Visit Microsoft!";</p>
+		<p>var res = str.replace("Microsoft", "W3Schools");</p>
+		<div id="strrep2"></div>
 	</ul>
 
 
@@ -39,14 +47,23 @@
 		document.getElementById("searchex").innerHTML = n; 
 
 
-
 		// Using String search() w/ string
 		var str2 = "Visit W3Schools";
 		var n2 = str2.search("W3Schools"); 
 
 		document.getElementById("searchstr").innerHTML = n2; 
 
+		// String replace() with a Regular Expression
+		var str = "Visit Microsoft!";
+		var res = str.replace(/microsoft/i, "W3Schools");
 
+		document.getElementById("strrep").innerHTML = res; 
+
+		// String replace - w/ string
+		var str = "Visit Microsoft!";
+		var res = str.replace("Microsoft", "W3Schools");
+
+		document.getElementById("strrep2").innerHTML = res; 
 
 	</script>
 
