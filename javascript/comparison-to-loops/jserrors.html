@@ -1,9 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JavaScript Errors - Throw and Try to Catch</title>
+	<title>JS Errors</title>
 </head>
 <body>
+	<h1>JavaScript Errors - Throw and Try to Catch</h1>
+	<h2>Important Statements</h2>
+		<ul>
+			<li><strong>try-</strong> test a block of code for erros</li>
+			<li><strong>catch-</strong> handle the errors</li>
+			<li><strong>throw-</strong> create custom errors</li>
+			<li><strong>finally-</strong> execute code after try and catch, regardless of the result</li>
+		</ul>
+
+		<h3>Errors Example</h3>
+		<div id="ex1"></div>
+
+		<h2>JavaScript try and catch</h2>
+		<p><strong>Try</strong> statement allows you to define a block of code to be tested for errors while it is being executed.</p>
+		<p><strong>Catch</strong> statement allows you to define a block of code to be executed, if an error occurs in the try block.</p>
+		<p>Try & Catch come in pairs.</p>
+
+		<h2>The throw Statement</h2>
+		<p><strong>Throw</strong> statement allows you to create a custom error.</p>
+		<p>Technically you can <strong>throw an exception (throw an error)</strong>.</p>
+		<p>The exception can ba a JavaScript String, a Number, a Boolean or an Object.</p>
+
+		<h3>Input Validation Example</h3>
+		<p>Please input a number between 5 and 10:</p>
+		<input id="demo" type="text">
+		<button type="button" onclick="myFunction()">Test Input</button>
+		<p id="message"></p>
+
+
+	<script>
+		
+		try {
+			addlert("Welcome guest!");
+		}
+		catch(err) {
+			document.getElementById("ex1").innerHTML = err.message; 
+		}
+
+
+		// Input Validation
+		function myFunction() {
+			var messge, x;
+			message = document.getElementById("message")
+		}
+
+
+
+
+	</script>
 
 </body>
 </html>
