@@ -47,6 +47,14 @@
 		<p>Example: num.toPrecision(500);</p>
 		<div id="rangerr"></div>
 
+		<h2>Reference Error</h2>
+		<p>A <strong>ReferenceError</strong> is thrown if you use (reference) a veriable that has not been declared:</p>
+		<p>var x;
+		try { <br>
+			x = y + 1;   // y cannot be referenced (used) <br>
+		}</p>
+		<div id="referr"></div>
+
 
 	<script>
 		
@@ -106,6 +114,16 @@
 		}
 		catch(err) {
 			document.getElementById("rangerr").innerHTML = err.name; 
+		}
+
+
+		// Reference Error
+		var x;
+		try {
+			x = y + 1;   // y cannot be referenced (used)
+		}
+		catch(err) {
+			document.getElementById("referr").innerHTML = err.name; 
 		}
 
 	</script>
