@@ -36,6 +36,17 @@
 		<p>The <strong>finally</strong> statement lets you execute code, after try and catch, regardless of the result:</p>
 		<div id="finally"></div>
 
+		<img src="errors.jpg">
+
+		<h2>Eval Error</h2>
+		<p>Indicates an error in the eval() function</p>
+		<p>Newer versions of JS do not throw any EvalError. Use SyntaxError instead.</p>
+
+		<h2>Range Error</h2>
+		<p>A <strong>RangeError</strong> is thrown if you use a number that is outside the range of legal values.</p>
+		<p>Example: num.toPrecision(500);</p>
+		<div id="rangerr"></div>
+
 
 	<script>
 		
@@ -87,6 +98,15 @@
 		// 	}
 		// }
 
+
+		// Range Error
+		var num = 1;
+		try {
+			num.toPrecision(500);  // A number cannot have 500 significant digits
+		}
+		catch(err) {
+			document.getElementById("rangerr").innerHTML = err.name; 
+		}
 
 	</script>
 
