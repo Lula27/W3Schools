@@ -55,6 +55,11 @@
 		}</p>
 		<div id="referr"></div>
 
+		<h2>Syntax Error</h2>
+		<p>A <strong>SyntaxError</strong> is thrown if you try to evaluate code with a syntax error.</p>
+		<p>eval("alert('Hello)");</p>
+		<div id="synterr"></div>
+
 
 	<script>
 		
@@ -124,6 +129,15 @@
 		}
 		catch(err) {
 			document.getElementById("referr").innerHTML = err.name; 
+		}
+
+
+		// Syntax Error
+		try {
+			eval("alert('Hello)"); // Missing  apostraphe will produce an error 
+		}
+		catch(err) {
+			document.getElementById("synterr").innerHTML = err.name; 
 		}
 
 	</script>
