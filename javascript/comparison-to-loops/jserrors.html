@@ -60,6 +60,26 @@
 		<p>eval("alert('Hello)");</p>
 		<div id="synterr"></div>
 
+		<h2>Type Error</h2>
+		<p>A <strong>TypeError</strong> is thrown if you use a value that is outside the range of expected types:</p>
+		<p>num.toUpperCase();</p>
+		<div id="typerr"></div>
+
+		<h2>URI Error</h2>
+		<p>A <strong>URIError</strong> is thrown if you use illegal characters in a URI function:</p>
+		<p>docodeURI("%%%");</p>
+		<div id="urierr"></div>
+
+		<h2>Debugging</h2>
+		<p>Debugging is the process of testing, finding, and reducing bugs (errors) in computer programs.</p>
+		<p>The first known computer bug was a real bug (an insect) stuck in the electronics.</p>
+		<h3>Debugging Methods</h3>
+		<h4>The console.log() Method</h4>
+		<h4>The debugger Keyword</h4>
+		<p>The <strong>debugger</strong> keyword stops the execution of JavaScript, and calls (if available) the debugging function.</p>
+		<p>With debugger turned on, code will stop executing before it executed the next line.</p>
+		<div id="debug"></div>
+
 
 	<script>
 		
@@ -139,6 +159,30 @@
 		catch(err) {
 			document.getElementById("synterr").innerHTML = err.name; 
 		}
+
+
+		// Type Error
+		var num = 1;
+		try {
+			num.toUpperCase();  // Note: You can't convert a number ot upper case
+		}
+		catch(err) {
+			document.getElementById("typerr").innerHTML = err.name; 
+		}
+
+		// URI Error
+		try {
+			decodeURI("%%%"); // You cannot URI decode these percent signs
+		}
+		catch(err) {
+			document.getElementById("urierr").innerHTML = err.name; 
+		}
+
+
+		// The debugger Keyword
+		var x = 15 * 5;
+		debugger;
+		document.getElementById("debug").innerHTML = x; 
 
 	</script>
 
