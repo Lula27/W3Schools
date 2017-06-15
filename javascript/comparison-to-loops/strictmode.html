@@ -32,8 +32,9 @@
 		<h2>Declaring Strict Mode</h2>
 		<p>Add "use strict"; to beginning of script/function</p>
 		<p>Has global scope</p>
-		<p><strong>Example:</strong></p>
+		<p><strong>Examples:</strong></p>
 		<div id="strict1"></div>
+		<div id="strict2"></div>
 
 
 	<script type="text/javascript">
@@ -41,10 +42,19 @@
 		// Strict Mode Example 1 - Declaring Strict Mode
 		"use strict";
 
-		var x = " ";
+		var x = " ";    // if I comment out declaration for x, will result in an error
 		x = 3.14;
 
 		document.getElementById("strict1").innerHTML = x; 
+
+
+		// Example 2 - declare with a function
+		"use strict";
+		myFunction(); 
+
+		function myFunction() {
+			y = 3.14; // Will also cause an error b/c y is not declared
+		}
 
 
 
