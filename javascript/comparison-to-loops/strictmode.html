@@ -54,11 +54,26 @@
 
 		function myFunction() {
 
-			// var y = " ";
+			var y = " ";
 			y = 3.14; // Will also cause an error b/c y is not declared
 
 			document.getElementById("strict2").innerHTML = y;
 		}
+
+		// Deleting a variable
+		var a = 7.77; 
+		// console.log(a); 
+
+		delete a; 
+
+		// console.log(a);
+
+
+		// With Strict Mode, deleting isn't allowed
+		// Error Message: Uncaught SyntaxError: Delete of an unqualified identifier in strict mode.
+		// "use strict";
+		// var b = 8.88;
+		// delete b; 
 
 
 
