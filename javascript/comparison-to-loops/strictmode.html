@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strict Mode</title>
+</head>
+<body>
+	<h1>JavaScript Use Strict</h1>
+	<ul>
+		<li>What: <strong>literal expression</strong></li>
+		<li>Why: 
+		<ol>Write "secure" JavaScript</ol>
+		<ol>Makes "bad syntax" that regular JS ignores into real errors.</ol>
+		<ol>Can't accidentally create global variables with mistyping</ol> </li>
+	</ul>
+	<p>Strict Mode will throw errors for the following:</p>
+		<ul>
+			<li>non-writable property</li>
+			<li>getter-only property</li>
+			<li>non-existing property</li>
+			<li>non-existing object</li>
+		</ul>
+	<p>Examples of practices that are NOT allowed in Strict Mode</p>
+		<ul>
+			<li>Using a variable w/o declaring it</li>
+			<li>Using an object w/o declaring it</li>
+			<li>Deleting a variable (or object): delete x;</li>
+			<li>deleting a function</li>
+			<li>Writing a read-only/get-only property</li>
+			<p><strong>Plus much more!</strong></p>
+		</ul>
+
+</body>
+</html>
