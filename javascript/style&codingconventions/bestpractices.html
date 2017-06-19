@@ -30,7 +30,28 @@
 	<h2>Beware of Automatic Type Conversions</h2>
 
 
-	
+	<script>
+		// Declarations on Top
+		var firstName, lastName, price, discount, fullPrice, statement;
+
+		// Use later 
+		firstName = "John";
+		lastName = " Doe";
+		statement = "";
+
+
+		price = 19.90;
+		discount = 0.10;
+
+		fullPrice = price * 100 / discount; 
+
+		statement += "Hello " + firstName + lastName + "!" + " You will be paying approximatly " + "$" +fullPrice + " for your purchase. Thank you! We appreciate your patronage."; 
+
+		// console.log(statement);
+		document.getElementById("declaretop").innerHTML = statement;
+
+
+	</script>
 
 </body>
 </html>
