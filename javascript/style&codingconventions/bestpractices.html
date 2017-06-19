@@ -5,10 +5,21 @@
 </head>
 <body>
 	<h2>Avoid Global Variables</h2>
+	<p>Use local variables instead, and learn how to use closures. </p>
 
 	<h2>Always Declare Local Variables</h2>
+	<p>Local variables <strong>must</strong> be delared with the <strong>var</strong> keyword, otherwise they will become global variables.</p>
+	<p>*Strict mode doesn't allow undeclared variables*</p>
 
 	<h2>Declarations on Top</h2>
+	<p>Useful for following:</p>
+	<ul>
+		<li>Give cleaner code</li>
+		<li>Provide single place to look for local variables</li>
+		<li>Make it easier to avoid unwanted (implied) global variables</li>
+		<li>Reduce the possibility of unwanted re-declarations</li>
+	</ul>
+	<div id="declaretop"></div>
 
 	<h2>Initialize Variables</h2>
 
@@ -17,6 +28,9 @@
 	<h2>Don't Use new Object()</h2>
 
 	<h2>Beware of Automatic Type Conversions</h2>
+
+
+	
 
 </body>
 </html>
