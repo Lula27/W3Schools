@@ -29,6 +29,9 @@
 
 	<h2>Beware of Automatic Type Conversions</h2>
 
+	<h2>End Your Switches with Defaults</h2>
+	<p>Always end your switch statements with a defualt. Even if you think there is no need for it.</p>
+
 
 	<script>
 		// Declarations on Top
@@ -59,6 +62,20 @@
 			
 		}
 
+
+
+		// End your Switches with DEFAULTS
+		switch (new Date().getDay()) {
+			case 0:
+				day = "Sunday";
+				break;
+			case 1: 
+				day = "Monday";
+				break; 
+			case 2: 
+				day = "Tuesday";
+				break; 
+		}
 
 	</script>
 
