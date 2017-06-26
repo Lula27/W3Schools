@@ -8,6 +8,16 @@
 	<h2>Reduce Activity in Loops</h2>
 	<h2>Reduce DOM Access</h2>
 	<div id="ex1"></div>
+	<h2>Reduce DOM Size</h2>
+	<p>Keep the number of elements in the HTML DOM small in order to improve page loading, and speed up rendering (page display), especially on smaller devices.</p>
+	<p>Smaller DOM makes it easier to search the DOM (like getElmentByTagName).</p>
+
+	<h2>Delay JavaScript Loading</h2>
+	<p>Putting your scripts at the bottom of the page body lets the browser load the page first.</p>
+	<ul>
+		<li>HTTP specification defines that browsers should not download more than two components in parallel</li>
+	</ul>
+	<p>An alternative is to use <strong>defer="true"</strong> in the script tag. The defer attribute specified that the script should be executed after the page has finished parsing, but it only works for external scripts.</p>
 
 </body>
 
@@ -27,7 +37,12 @@
 		obj.innerHTML = "Hi There!"; 
 
 
-
+		// Also possible to add your script to the page by code after the page has loaded:
+		// window.onload = function() {
+		// 	var element = document.createElment("script");
+		// 	// element.src = "myScript.js";
+		// 	document.body.appendChild(element);
+		// };
 
 
 
